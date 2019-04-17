@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Pacifico|Titillium+Web|Montserrat');
+
+* {
+    transition: 0.3s;
+}
+
+img {
+    border-radius: 2px;
+}
+
+br {
+    height: 6px;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2 {
+    font-family: 'titillium web', sans-serif;
+    color: #283655;
+    font-weight: 900;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    line-height: 56px;
+}
+
+.main .parallax h1 {
+    color: #f7f9fb;
+    line-height: 40vh;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    text-align: center;
+    line-height: 48px;
+}
+
+.content {
+    width: 1066px;
+    overflow: hidden;
+    margin: 24px auto;
+    padding: 12px 0;
+    background-color: #fff;
+    box-shadow: 0 0 5px -1px #666;
+    padding: 14px;
+    border-radius: 5px;
+}
+
+.content p {
+    font-size: 18px;
+    color: #202020;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.content .img_container {
+    padding: 10px 15px 10px 15px;
+}
+
+.content .img_container img {
+    max-height: 400px;
+    max-width: 512px;
+}
+
+.content .left {
+    float: left;
+    padding-left: 18px;
+}
+
+.content .right {
+    float: right;
+    padding-right: 18px;
+}
+
+html,
+body,
+.main {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    padding: 0;
+    background-color: #eee;
+}
+
+.page_cover {
+    position: fixed;
+    height: 0;
+    width: 0;
+    z-index: 50;
+    transition: height 0s, width 0s, background-color 0.5s;
+}
+
+.nav_bar {
+    /*set to same as scrollposition.js inital color*/
+    background-color: #00000000;
+    display: block;
+    z-index: 1000;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    transition: 0s;
+}
+
+.nav_logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 12px;
+    color: #1E1F26;
+    display: inline-block;
+    font-size: 48px;
+    line-height: 64px;
+    font-family: 'pacifico', cursive;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.nav_bar_links {
+    float: right;
+    padding: 0 64px 0 0;
+}
+
+.nav_bar a {
+    margin: 0;
+    padding: 0;
+    font-family: 'titillium web', sans-serif;
+    color: #1E1F26;
+    text-align: center;
+    width: 146px;
+    height: 64px;
+    line-height: 64px;
+    text-decoration: none;
+    font-size: 24px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav_bar a:hover {
+    background-color: #20202070;
+}
+
+.nav_btn {
+    display: none;
+}
+
+.parallax {
+    /*parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.parallax.full {
+    height: 100vh;
+
+}
+
+.parallax.small {
+    height: 40vh;
+    background-color: #00000050;
+    background-blend-mode: multiply;
+
+
+}
+
+.parallax.home1 {
+    background-image: url("images/parallax_bomon.jpg");
+}
+
+.parallax.home2 {
+    background-image: url("images/parallax_KuGongSan.jpg");
+}
+
+.parallax.home3 {
+    background-image: url("images/parallax_helipad.jpg");
+}
+
+.parallax.home4 {
+    background-image: url("images/parallax_house_in_mountian.jpg");
+}
+
+
+/*footer*/
+footer {
+    background-color: #1E1F26;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+
+    padding: 45px 50px;
+}
+
+footer .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Footer links */
+
+footer p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
+footer p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+footer .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+}
+
+footer .footer-right a img,
+footer .footer-right a {
+    height: 35px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.switch_container {
+    display: inline-block;
+    height: 35px;
+    width: 48px;
+    margin-left: 88px;
+}
+
+.switch_container .title {
+    transform: translate(-26px, 10px);
+    text-align: center;
+    width: 100px;
+    color: #ffffff;
+
+}
+
+.switch {
+    text-align: center;
+    display: inline-block;
+    height: 14px;
+    width: 42px;
+    position: relative;
+    top: 9px;
+    margin: 0 3px 0 3px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    /*for chrome moblie*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+.switch:hover,
+.switch:focus,
+.switch:active {
+    background-color: #00000000;
+}
+
+i.rail {
+    display: inline-block;
+    background-color: #808080a0;
+    height: 14px;
+    border-radius: 50vh;
+    width: 35px;
+}
+
+i.knob {
+    background-color: #f1f1f1;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    float: left;
+    transform: translate(-3px, -3px);
+}
+
+
+
+
+
+
+
+
+
+
+
+/*dark mode webstyle change*/
+
+body.dark,
+.dark .main {
+    background-color: #111
+}
+.dark .content {
+    background-color: #202020;
+    box-shadow: none;
+    border: 1px #333 solid;
+}
+.dark p {
+    color: #ddd;
+}
+
+.dark i.rail {
+    background-color: #5085a5;
+}
+
+.dark i.knob {
+    transform: translate(18px, -3px);
+}
+
+.dark h1,
+.dark h2 {
+    color: #5085a5;
+}
+
+
+
+
+
+
+
+
+/*moblie site - if change mobile page width also change in scrollFunction in scrollpositoion.js*/
+@media screen and (max-width: 1024px) {
+    #main {
+        transition: margin-left .5s ease, background-color .5s ease;
+        padding: 64px 0 0 0;
+    }
+
+    .parallax.full {
+        display: none;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .content {
+        width: 100%;
+        margin: 10px auto;
+        padding: 0;
+    }
+
+    .content p {
+        width: 95%;
+        margin: auto;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: left;
+
+    }
+
+    .content .img_container {
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+
+    .content .img_container img {
+        width: 100%;
+        max-width: 60vh;
+        max-height: 2000px;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .content .img_container.double img {
+        width: 49%;
+    }
+
+    .moblie_nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 68px;
+        background-color: #f7f9fb;
+        transition: 0.5s ease;
+        z-index: 40;
+
+    }
+
+    .nav_logo {
+        position: relative;
+        font-size: 30px;
+        line-height: 68px;
+    }
+
+    .nav_bar {
+        height: 100%;
+        width: 0;
+        /* closed width - change opened with in sideNav.js*/
+        position: fixed;
+        /* Stay in place */
+        top: 0;
+        /* Stay at the top */
+        right: 0;
+        left: auto;
+        background-color: #111;
+        /*if change color of moblie nav bar also change color within else statment in sideNav.js*/
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        padding-top: 60px;
+        /* placement of links*/
+        transition: 0.5s;
+        /* 0.5 second transition effect to slide in the sidenav */
+        box-shadow: none;
+        z-index: 50;
+    }
+
+    /* The navigation menu links */
+    .nav_bar a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .nav_bar a:hover {
+        color: #f1f1f1;
+    }
+
+    /*styling of button to open navbar on mobile*/
+    .nav_btn {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 48px;
+        height: 48px;
+        z-index: 1;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+
+    .close_btn {
+        z-index: -1;
+    }
+
+    /* <i> is the one of the 3 lines in the button shape*/
+    .nav_btn i {
+        box-sizing: border-box;
+        display: block;
+        width: 20px;
+        height: 2.1px;
+        background-color: #000;
+        border-radius: 1px;
+        margin-left: 14px;
+    }
+
+    .nav_btn i:nth-child(1) {
+        margin-top: 16px;
+    }
+
+    .nav_btn i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+    }
+
+    .nav_btn i:nth-child(3) {
+        margin-top: 4px;
+    }
+
+    .nav_btn i {
+        transition: transform 0.5s ease;
+        animation-timing-function: ease-out;
+    }
+
+    .opened i:nth-child(1) {
+        transform: translate(7.2px, 1.6px) rotate(45deg);
+        width: 14.2px;
+    }
+
+    .opened i:nth-child(2) {
+        opacity: 1;
+    }
+
+    .opened i:nth-child(3) {
+        transform: translate(7.2px, -1.6px) rotate(-45deg);
+        width: 14.2px;
+    }
+
+    /*footer*/
+    footer .footer-left,
+    footer .footer-right {
+        text-align: center;
+    }
+
+    footer .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    footer .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
