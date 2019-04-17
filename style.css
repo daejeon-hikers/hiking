@@ -229,6 +229,7 @@ footer p.footer-links a {
 
 footer .footer-right {
     float: right;
+    margin-right: 20px;
     margin-top: 6px;
     max-width: 180px;
 }
@@ -309,6 +310,10 @@ i.knob {
 body.dark,
 .dark .main {
     background-color: #111
+}
+.dark .parallax.full {
+    background-color: #00000055;
+    background-blend-mode: multiply;
 }
 .dark .content {
     background-color: #202020;
