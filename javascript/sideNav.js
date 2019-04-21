@@ -54,6 +54,7 @@ function openCheck(type) {
 function dropDownOpen(type) {
   document.getElementById("dropDown" + type + "").classList.add("opened");
   document.getElementById("mySidenav").style.backgroundColor = "rgba(" + fr + "," + fg + "," + fb + "," + fa + ")";
+  document.getElementById("mySidenav").style.transition = "0.3s"
   disableScroll()
 }
 
@@ -61,13 +62,23 @@ function dropDownClose(type) {
   document.getElementById("dropDown" + type + "").classList.remove("opened");
   scrollFunction()
   enableScroll()
-}
-function disableScroll(){
-  var x=window.scrollX;
-  var y=window.scrollY;
-  window.onscroll=function(){window.scrollTo(x, y);};
+  setTimeout(disableAni, 300);
+  function disableAni() {
+    document.getElementById("mySidenav").style.transition = "0s";
+  }
+  
 }
 
-function enableScroll(){
-  window.onscroll=scrollFunction();
+function disableScroll() {
+  var x = window.scrollX;
+  var y = window.scrollY;
+  window.onscroll = function () {
+    window.scrollTo(x, y);
+  };
+}
+
+function enableScroll() {
+  window.onscroll = function () {
+    scrollFunction()
+  };
 }
