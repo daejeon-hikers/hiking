@@ -23,7 +23,7 @@ function scrollFunction() {
         //color after parllax
         if (document.documentElement.scrollTop > winheight - navBar.offsetHeight) {
             navBar.style.backgroundColor = "rgba(" + fr + "," + fg + "," + fb + "," + fa + ")"
-            navBar.style.boxShadow = "0 0 9px -1px #111"
+            navBar.style.boxShadow = "0px 8px 16px 0px rgba(0, 0, 0, 0.2)"
             //color during scrolling of the parllax
         } else {
             //portion scrolled to the end of the inital parllax
