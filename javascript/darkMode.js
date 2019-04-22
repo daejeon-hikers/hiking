@@ -1,9 +1,9 @@
  function checkDarkmode() {
      var darkTrue = getCookie("darkmode")
      if (darkTrue === "1") {
-        enableDarkmode()
+         enableDarkmode()
      } else {
-        disableDarkmode()
+         disableDarkmode()
      }
 
  }
@@ -25,7 +25,7 @@
  }
 
  function disableDarkmode() {
-    document.body.classList.remove("dark");
+     document.body.classList.remove("dark");
  }
 
  function getCookie(cname) {

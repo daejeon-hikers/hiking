@@ -3,17 +3,28 @@ window.onscroll = function () {
     scrollFunction()
 };
 // color of nav bar o for orignal and f for final rgba values
-var or = 255,
-    og = 255,
-    ob = 255,
-    oa = 0,
-    fr = 255,
-    fg = 255,
-    fb = 255,
-    fa = 1;
 
 function scrollFunction() {
     var navBar = document.getElementById("mySidenav");
+    if (document.body.classList.contains("dark")) {
+        var or = 32,
+            og = 32,
+            ob = 32,
+            oa = 0,
+            fr = 32,
+            fg = 32,
+            fb = 32,
+            fa = 1;
+    } else {
+        var or = 255,
+            og = 255,
+            ob = 255,
+            oa = 0,
+            fr = 255,
+            fg = 255,
+            fb = 255,
+            fa = 1;
+    }
     //height and width of browser window
     var winheight = window.innerHeight;
     var winWidth = window.innerWidth;
