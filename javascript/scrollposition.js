@@ -4,7 +4,7 @@ window.onscroll = function () {
 };
 // color of nav bar o for orignal and f for final rgba values
 
-function scrollFunction() {
+function scrollFunction(dropDownOpened) {
     var navBar = document.getElementById("mySidenav");
     if (getCookie("darkmode") === "1") {
         var or = 32,
@@ -32,7 +32,7 @@ function scrollFunction() {
     //change number if changing mobile page width in css media query
     if (winWidth > 1024) {
         //color after parllax
-        if (document.documentElement.scrollTop > winheight - navBar.offsetHeight) {
+        if (document.documentElement.scrollTop > winheight - navBar.offsetHeight ||dropDownOpened) {
             navBar.style.backgroundColor = "rgba(" + fr + "," + fg + "," + fb + "," + fa + ")"
             navBar.style.boxShadow = "0px 8px 16px 0px rgba(0, 0, 0, 0.2)"
             //color during scrolling of the parllax
@@ -41,6 +41,7 @@ function scrollFunction() {
             var scrollPer = ((document.documentElement.scrollTop) / (winheight - navBar.offsetHeight));
             navBar.style.backgroundColor = "rgba(" + (or + ((fr - or) * scrollPer)) + "," + (og + ((fg - og) * scrollPer)) + "," + (ob + ((fb - ob) * scrollPer)) + "," + (oa + ((fa - oa) * scrollPer)) + ")";
             navBar.style.boxShadow = "none";
+
         }
     }
 }

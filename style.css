@@ -369,10 +369,15 @@ i.knob {
     cursor: pointer;
     width: 100%;
     height: 100%;
+    border-radius: 20%;
 }
 
 .ir svg {
     fill: #fff;
+}
+.ir:hover {
+    transform: scale(1.1);
+    background-color: #3C5A99;
 }
 
 

@@ -53,9 +53,9 @@ function openCheck(type) {
 
 function dropDownOpen(type) {
   document.getElementById("dropDown" + type + "").classList.add("opened");
-  document.getElementById("mySidenav").style.backgroundColor = "rgba(" + fr + "," + fg + "," + fb + "," + fa + ")";
   document.getElementById("mySidenav").style.transition = "0.3s"
   disableScroll()
+  scrollFunction(true)
 }
 
 function dropDownClose(type) {
