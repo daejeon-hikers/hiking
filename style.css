@@ -394,7 +394,9 @@ body.dark,
     background-color: #111
 }
 
-.dark .nav_bar .arrow_container i,
+.dark .nav_bar .arrow_container i{
+    background-color: #ddd;
+}
 .dark .nav_bar a,
 .dark .nav_logo {
     color: #ddd;
