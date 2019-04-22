@@ -6,7 +6,7 @@ window.onscroll = function () {
 
 function scrollFunction() {
     var navBar = document.getElementById("mySidenav");
-    if (document.body.classList.contains("dark")) {
+    if (getCookie("darkmode") === "1") {
         var or = 32,
             og = 32,
             ob = 32,

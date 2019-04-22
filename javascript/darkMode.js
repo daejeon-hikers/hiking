@@ -5,6 +5,7 @@
      } else {
          disableDarkmode()
      }
+     scrollFunction()
 
  }
 

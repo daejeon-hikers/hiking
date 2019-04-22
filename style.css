@@ -301,7 +301,8 @@ footer .footer-right {
 
 footer .footer-right a img,
 footer .footer-right a {
-    height: 35px;
+    height: 48px;
+    width: 48px;
     display: inline-block;
     cursor: pointer;
 }
@@ -311,10 +312,13 @@ footer .footer-right a {
     height: 35px;
     width: 48px;
     margin-left: 48px;
+    cursor: pointer;
+    transform: translatey(-6px);
 }
 
+
 .switch_container .title {
-    transform: translate(-26px, 10px);
+    transform: translate(-26px, 14px);
     text-align: center;
     width: 100px;
     color: #ffffff;
@@ -360,8 +364,16 @@ i.knob {
     transform: translate(-3px, -3px);
 }
 
+.ir {
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+}
 
-
+.ir svg {
+    fill: #fff;
+}
 
 
 
@@ -375,6 +387,14 @@ i.knob {
 body.dark,
 .dark .main {
     background-color: #111
+}
+
+.dark .nav_logo {
+    color: #ddd;
+}
+
+.dark .nav_bar a {
+    color: #ddd;
 }
 
 .dark .parallax.full {
