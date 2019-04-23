@@ -173,6 +173,7 @@ body,
 
 .nav_bar .drop_down.opened {
     max-height: 600px;
+    z-index: 1002;
 }
 
 .nav_bar .drop_down a {
@@ -254,7 +255,7 @@ body,
 }
 
 .parallax.home4 {
-    background-image: url("images/parallax_house_in_mountian.jpg");
+    background-image: url("images/parallax_house_in_mountain.jpg");
 }
 
 
