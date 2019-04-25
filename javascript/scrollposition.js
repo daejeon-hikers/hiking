@@ -15,7 +15,7 @@ function scrollFunction(dropDownOpened) {
             fg = 32,
             fb = 32,
             fa = 1;
-    } else {
+    } else if (getCookie("darkmode") === "0") {
         var or = 255,
             og = 255,
             ob = 255,
@@ -24,6 +24,26 @@ function scrollFunction(dropDownOpened) {
             fg = 255,
             fb = 255,
             fa = 1;
+    } else {
+        if (checkTime() <= 18 && checkTime() >= 6) {
+            var or = 255,
+                og = 255,
+                ob = 255,
+                oa = 0,
+                fr = 255,
+                fg = 255,
+                fb = 255,
+                fa = 1;
+        } else {
+            var or = 32,
+                og = 32,
+                ob = 32,
+                oa = 0,
+                fr = 32,
+                fg = 32,
+                fb = 32,
+                fa = 1;
+        }
     }
     //height and width of browser window
     var winheight = window.innerHeight;
@@ -32,7 +52,7 @@ function scrollFunction(dropDownOpened) {
     //change number if changing mobile page width in css media query
     if (winWidth > 1024) {
         //color after parllax
-        if (document.documentElement.scrollTop > winheight - navBar.offsetHeight ||dropDownOpened) {
+        if (document.documentElement.scrollTop > winheight - navBar.offsetHeight || dropDownOpened) {
             navBar.style.backgroundColor = "rgba(" + fr + "," + fg + "," + fb + "," + fa + ")"
             navBar.style.boxShadow = "0px 8px 16px 0px rgba(0, 0, 0, 0.2)"
             //color during scrolling of the parllax
