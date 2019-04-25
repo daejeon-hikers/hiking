@@ -29,9 +29,9 @@
          var cvalue = "1";
      } else {
          if (checkTime() <= 18 && checkTime() >= 6) {
-             darkTrue = "1"
+             cvalue = "1"
          } else {
-             darkTrue = "0"
+             cvalue = "0"
          }
      }
      document.cookie = "darkmode=" + cvalue + ";path=/";
