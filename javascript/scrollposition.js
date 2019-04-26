@@ -6,6 +6,7 @@ window.onscroll = function () {
 
 function scrollFunction(dropDownOpened) {
     var navBar = document.getElementById("mySidenav");
+    //value of rgba values for darkmode enabled
     if (getCookie("darkmode") === "1") {
         var or = 32,
             og = 32,
@@ -15,6 +16,7 @@ function scrollFunction(dropDownOpened) {
             fg = 32,
             fb = 32,
             fa = 1;
+        //value of rgba values for lightmode enabled
     } else if (getCookie("darkmode") === "0") {
         var or = 255,
             og = 255,
@@ -25,6 +27,7 @@ function scrollFunction(dropDownOpened) {
             fb = 255,
             fa = 1;
     } else {
+        //value of rgba values for lightmode enabled due to time
         if (checkTime() <= 18 && checkTime() >= 6) {
             var or = 255,
                 og = 255,
@@ -34,6 +37,7 @@ function scrollFunction(dropDownOpened) {
                 fg = 255,
                 fb = 255,
                 fa = 1;
+            //value of rgba values for darkmode enabled due to time
         } else {
             var or = 32,
                 og = 32,
@@ -51,7 +55,7 @@ function scrollFunction(dropDownOpened) {
     //media query so that color only changes in desktop mode
     //change number if changing mobile page width in css media query
     if (winWidth > 1024) {
-        //color after parllax
+        //style after parllax also applys when dropdown menu is open
         if (document.documentElement.scrollTop > winheight - navBar.offsetHeight || dropDownOpened) {
             navBar.style.backgroundColor = "rgba(" + fr + "," + fg + "," + fb + "," + fa + ")"
             navBar.style.boxShadow = "0px 8px 16px 0px rgba(0, 0, 0, 0.2)"

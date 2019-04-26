@@ -87,8 +87,8 @@ body,
 }
 
 .nav_bar {
-    /*set to same as scrollposition.js inital color*/
-    background-color: #00000000;
+    /*set to same as scrollposition.js final color incase no javascript is enabled*/
+    background-color: #ffffffff;
     display: block;
     z-index: 1000;
     width: 100%;
@@ -184,41 +184,6 @@ body,
     display: none;
 }
 
-
-/* .parallax .down_arrow_container {
-    padding-top: 100px;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    background-image: linear-gradient(0deg, #00000050, #00000000);
-
-}
-.parallax .down_arrow_container p{
-    line-height: 48px;
-    text-align: center;
-    vertical-align: top;
-    color: #aaa;
-}
-.parallax .down_arrow {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.parallax .down_arrow i {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 30px;
-    height: 4px;
-    background-color: #aaa;
-    border-radius: 2px;
-    transform: rotate(45deg) translateX(8px);
-}
-
-.parallax .down_arrow i:last-of-type {
-    transform: rotate(-45deg) translateX(-8px);
-} */
 
 .parallax {
     /*parallax scrolling effect */
