@@ -11,34 +11,44 @@ img {
 }
 
 h1,
-h2 {
+h2,
+h3,
+h4 {
     font-family: 'titillium web', sans-serif;
     color: #283655;
     font-weight: 900;
-    margin-top: -12px;
+    text-align: center;
+
+
 }
 
 h1 {
     font-size: 32px;
-    text-align: center;
     line-height: 84px;
+    margin-top: -12px;
 }
 
-.main .parallax h1 {
+.parallax h1 {
     color: #f7f9fb;
     line-height: 40vh;
-    text-align: center;
     margin-top: 0;
 }
 
 h2 {
     font-size: 28px;
-    text-align: center;
     line-height: 72px;
+    margin-top: -12px;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 48px;
+    margin-top: -6px;
 }
 
 .content {
-    max-width: 1066px;
+    box-sizing: border-box;
+    max-width: 1114px;
     overflow: hidden;
     margin: 24px auto;
     padding: 24px 24px;
@@ -46,6 +56,7 @@ h2 {
     /* box-shadow: 0 0 5px -1px #666; */
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+
 }
 
 .content p {
@@ -68,6 +79,26 @@ h2 {
 .content .right {
     float: right;
     padding-left: 24px;
+}
+
+.card_container {
+    margin: auto;
+    max-width: 1114px;
+}
+
+.content.small {
+    width: calc(30% - 12px);
+    margin: 12px;
+    padding: 12px;
+    display: inline-block;
+}
+
+.content.small:hover {
+    transform: scale(1.04);
+}
+
+.content.small .img_container img {
+    width: 100%;
 }
 
 html,
@@ -207,23 +238,6 @@ body,
 
 }
 
-.parallax.home1 {
-    background-image: url("images/parallax_bomon.jpg");
-}
-
-.parallax.home2 {
-    background-image: url("images/parallax_KuGongSan.jpg");
-}
-
-.parallax.home3 {
-    background-image: url("images/parallax_helipad.jpg");
-}
-
-.parallax.home4 {
-    background-image: url("images/parallax_house_in_mountain.jpg");
-}
-
-
 /*footer*/
 footer {
     background-color: #1E1F26;
@@ -341,6 +355,7 @@ i.knob {
 .ir svg {
     fill: #fff;
 }
+
 .ir:hover {
     transform: scale(1.1);
     background-color: #3C5A99;
@@ -360,9 +375,10 @@ body.dark,
     background-color: #111
 }
 
-.dark .nav_bar .arrow_container i{
+.dark .nav_bar .arrow_container i {
     background-color: #ddd;
 }
+
 .dark .nav_bar a,
 .dark .nav_logo {
     color: #ddd;
@@ -393,19 +409,25 @@ body.dark,
 }
 
 .dark h1,
-.dark h2 {
+.dark h2,
+.dark h3,
+.dark h4 {
     color: #5085a5;
 }
 
-
-
-
-
-
-
-
-/*moblie site - if change mobile page width also change in scrollFunction in scrollpositoion.js*/
 @media screen and (max-width: 1024px) {
+    .dark .moblie_nav {
+        background-color: #202020;
+    }
+    .dark .nav_btn i {
+        background-color: #ddd;
+    }
+
+
+
+
+
+    /*moblie site */
     #main {
         transition: margin-left .5s ease, background-color .5s ease;
         padding: 64px 0 0 0;
@@ -465,6 +487,7 @@ body.dark,
         z-index: 40;
 
     }
+
 
     .nav_logo {
         position: relative;
@@ -582,4 +605,3 @@ body.dark,
     footer .footer-left p.footer-links {
         line-height: 1.8;
     }
-}
