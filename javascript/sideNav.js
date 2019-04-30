@@ -35,12 +35,13 @@ function closeNav() {
 function widthCheck() {
   var winWidth = window.innerWidth;
   if (winWidth > 1024) {
+    closeNav()
     document.getElementById("mySidenav").style.width = "100%";
     document.getElementById("main").style.marginLeft = "0";
     //in order to change to the right color according to scroll position
     scrollFunction()
   } else {
-    //closes the navbar on window resize so that when the desktop size becomes moblie nav bar is not broken
+    //closes the navbar on window resize so that when the desktop site becomes moblie nav bar is properly hidden
     closeNav()
     //color of moblie navbar
     document.getElementById("mySidenav").style.backgroundColor = "#111";

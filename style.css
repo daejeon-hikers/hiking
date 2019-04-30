@@ -28,7 +28,7 @@ h1 {
     margin-top: -12px;
 }
 
-.parallax h1 {
+.main .parallax h1 {
     color: #f7f9fb;
     line-height: 40vh;
     margin-top: 0;
@@ -71,6 +71,10 @@ h4 {
     max-width: 512px;
 }
 
+.img_container.double img {
+    max-width: 625px;
+}
+
 .content .left {
     float: left;
     padding-right: 24px;
@@ -86,11 +90,16 @@ h4 {
     max-width: 1114px;
 }
 
+.row {
+    display: flex;
+    justify-content: center;
+}
+
 .content.small {
-    width: calc(30% - 12px);
+    width: calc(33.333% - 12px);
     margin: 12px;
     padding: 12px;
-    display: inline-block;
+    text-decoration: none;
 }
 
 .content.small:hover {
@@ -166,8 +175,9 @@ body,
 }
 
 .nav_bar a:hover {
-    color: #000;
-    text-decoration: underline;
+    color: #fff;
+    text-decoration: none;
+
 }
 
 .nav_bar .arrow_container {
@@ -192,7 +202,7 @@ body,
 }
 
 .nav_bar .drop_down {
-    background-color: #283655;
+    background-color: #fff;
     position: fixed;
     right: 64px;
     top: 64px;
@@ -383,6 +393,13 @@ body.dark,
 .dark .nav_logo {
     color: #ddd;
 }
+.dark .nav_bar a:hover {
+    color: #fff;
+}
+
+.nav_bar .drop_down {
+    background-color: #202020;
+}
 
 .dark .parallax.full {
     background-color: #00000030;
@@ -419,6 +436,7 @@ body.dark,
     .dark .moblie_nav {
         background-color: #202020;
     }
+
     .dark .nav_btn i {
         background-color: #ddd;
     }
@@ -437,43 +455,65 @@ body.dark,
         display: none;
     }
 
+    .parallax_h1_contianer {
+        line-height: 40vh;
+        text-align: center;
+    }
+
+    .main .parallax h1 {
+        display: inline-flex;
+        line-height: 40px;
+        text-align: center;
+    }
+
     h1 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 44px;
+        margin-bottom: 12px;
     }
 
     h2 {
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 24px;
+        line-height: 36px;
+        margin-bottom: 12px;
     }
 
-    .content {
+    .content,
+    .content.small {
         width: 100%;
-        margin: 10px auto;
+        margin: 16px auto;
+        display: block;
+    }
+
+    .content.small:hover {
+        transform: none;
+    }
+
+    .row {
+        display: block;
     }
 
     .content p {
-        width: 95%;
         margin: auto;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: left;
-
+        font-size: 18px;
+        line-height: 30px;
     }
 
     .content .img_container {
-        width: 100%;
+        display: block;
         padding: 0 0 10px 0;
+        float: none;
+
     }
 
     .content .img_container img {
-        width: 100%;
-        max-width: 60vh;
-        max-height: 2000px;
+        margin: auto;
+        display: block;
+        max-width: 100%;
+        max-height: 50vh;
     }
-
-    .content .img_container.double img {
-        width: 49%;
+    .content.small .img_container img {
+        width:auto;
     }
 
     .moblie_nav {
@@ -488,11 +528,15 @@ body.dark,
 
     }
 
-
     .nav_logo {
         position: relative;
         font-size: 30px;
         line-height: 68px;
+    }
+
+    .nav_bar_links {
+        float: none;
+        padding: 0;
     }
 
     .nav_bar {
@@ -519,8 +563,9 @@ body.dark,
 
     /* The navigation menu links */
     .nav_bar a {
-        padding: 8px 8px 8px 32px;
+        padding: 8px 72px 8px 32px;
         text-decoration: none;
+        text-align: right;
         font-size: 25px;
         color: #818181;
         display: block;
@@ -528,7 +573,12 @@ body.dark,
     }
 
     .nav_bar a:hover {
-        color: #f1f1f1;
+        color: #818181;
+    }
+
+    .nav_bar .arrow_container {
+        display: none;
+
     }
 
     /*styling of button to open navbar on mobile*/
@@ -605,3 +655,20 @@ body.dark,
     footer .footer-left p.footer-links {
         line-height: 1.8;
     }
+}
+
+@media screen and (max-width: 512px) {
+    .content p {
+        margin: auto;
+        font-size: 14px;
+        line-height: 24px;
+    } 
+    h1 {
+        font-size: 24px;
+        line-height:40px;
+    }
+    h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
