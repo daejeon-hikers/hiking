@@ -160,7 +160,8 @@ body,
     padding: 0 64px 0 0;
 }
 
-.nav_bar a {
+.nav_bar a,
+.nav_bar .drop_down a {
     font-family: 'titillium web', sans-serif;
     color: #1E1F26;
     text-align: center;
@@ -217,9 +218,6 @@ body,
     z-index: 1002;
 }
 
-.nav_bar .drop_down a {
-    color: #fff;
-}
 
 .nav_btn {
     display: none;
@@ -397,7 +395,7 @@ body.dark,
     color: #fff;
 }
 
-.nav_bar .drop_down {
+.dark .nav_bar .drop_down {
     background-color: #202020;
 }
 
