@@ -429,7 +429,7 @@ body.dark,
 .dark h2,
 .dark h3,
 .dark h4 {
-    color: #5085a5;
+    color: #eee;
 }
 
 @media screen and (max-width: 1024px) {
