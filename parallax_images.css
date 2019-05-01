@@ -19,7 +19,14 @@
     background-image: url("images/parallax_bomon2.jpg")
 }
 
+.parallax.DeoGyuSan1 {
+    background-image: url("images/mountains/DeoGyuSan/parallax.jpg")
+}
 
-.parallax.about_us1{
+.parallax.DeoGyuSan2 {
+    background-image: url("images/mountains/DeoGyuSan/temple_parallax.JPG")
+}
+
+.parallax.about_us1 {
     background-image: url("images/parallax_group.jpg")
 }

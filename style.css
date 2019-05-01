@@ -587,10 +587,12 @@ body.dark,
         max-width: 100%;
         max-height: 50vh;
     }
+
     /* removeing the width 100% for the link images */
     .content.small .img_container img {
         width: auto;
     }
+
     /* styling of the moblie nav bar */
     /* different class as the desktop nav bar as the desktop nav bar is hidden to the side so that it can be opened with a button */
     .moblie_nav {
@@ -604,6 +606,7 @@ body.dark,
         z-index: 40;
 
     }
+
     /* banner inside the moblie nav bar */
     .nav_logo {
         position: relative;
@@ -614,6 +617,7 @@ body.dark,
     .nav_bar_links {
         padding: 0;
     }
+
     /* nav bar is set to width 0 and this is changed by javascript when the user opens the nav bar on the moblie page */
     .nav_bar {
         height: 100%;
@@ -647,10 +651,12 @@ body.dark,
         display: block;
         transition: 0.3s;
     }
+
     /* removes the change in color hover effect */
     .nav_bar a:hover {
         color: #818181;
     }
+
     /* drop down menu is not avible on te moblie site so the drop down arrows are not required */
     .nav_bar .arrow_container {
         display: none;
@@ -669,6 +675,7 @@ body.dark,
         border-radius: 50%;
         transition: 0.5s;
     }
+
     /* bring the close button behind the open button. it is brought forward when the user opens the nav bar */
     .close_btn {
         z-index: -1;
@@ -696,11 +703,13 @@ body.dark,
     .nav_btn i:nth-child(3) {
         margin-top: 4px;
     }
+
     /* timeing is set to 0.5 as this is the timing of the opening of the nav bar */
     .nav_btn i {
         transition: transform 0.5s ease;
         animation-timing-function: ease-out;
     }
+
     /* class opened is added in order to make the button become a back arrow when the nav bar is open on movlie */
     .nav_btn.opened i:nth-child(1) {
         transform: translate(7.2px, 1.6px) rotate(45deg);
@@ -727,6 +736,7 @@ body.dark,
         line-height: 1.8;
     }
 }
+
 /* in order to change font size for moblie  */
 @media screen and (max-width: 512px) {
     .content p {
