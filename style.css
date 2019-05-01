@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu|Pacifico|Titillium+Web|Montserrat');
 
+/* page is coded for  light mode and dark mode code is applied useing class dark on the body */
+/* universal style for all eliments on the page */
 * {
     transition: 0.3s;
     margin: 0;
@@ -10,6 +12,7 @@ img {
     border-radius: 2px;
 }
 
+/* style for all headings */
 h1,
 h2,
 h3,
@@ -18,10 +21,9 @@ h4 {
     color: #283655;
     font-weight: 900;
     text-align: center;
-
-
 }
 
+/* sizes for each heading size */
 h1 {
     font-size: 32px;
     line-height: 84px;
@@ -46,6 +48,7 @@ h4 {
     margin-top: -6px;
 }
 
+/* content "card"*/
 .content {
     box-sizing: border-box;
     max-width: 1114px;
@@ -66,15 +69,18 @@ h4 {
     text-align: justify;
 }
 
+/* the sizing of the images useing max hieght and max width so that there is no need to make a new style for different aspect ratio images */
 .content .img_container img {
     max-height: 400px;
     max-width: 512px;
 }
 
+/* larger width for the double images */
 .img_container.double img {
     max-width: 625px;
 }
 
+/* to move the images left or right of the content card */
 .content .left {
     float: left;
     padding-right: 24px;
@@ -85,16 +91,20 @@ h4 {
     padding-left: 24px;
 }
 
+/* container for the mountians and canoe page links */
 .card_container {
     margin: auto;
     max-width: 1114px;
 }
 
+/* a row of the mountians or canoe page links*/
 .row {
+    /* uses display flex so that the links will will be centered even if there is not the correct number of links. this allows for a more adaptiple page */
     display: flex;
     justify-content: center;
 }
 
+/* syleing of the links on the mountians and conoe page. uses most of the styling of the content cards with a differnt sizeing */
 .content.small {
     width: calc(33.333% - 12px);
     margin: 12px;
@@ -102,14 +112,17 @@ h4 {
     text-decoration: none;
 }
 
+/* hover effect of the links on thte mountians and canoe page */
 .content.small:hover {
     transform: scale(1.04);
 }
 
+/* styleing of the image in side the links on the mountians and canoe page */
 .content.small .img_container img {
     width: 100%;
 }
 
+/* styleing for the page */
 html,
 body,
 .main {
@@ -118,6 +131,8 @@ body,
     background-color: #f5f5f5;
 }
 
+/* page cover that is shown when moblie nava bar is opened */
+/* its style is changed by javascript in order to cover the page */
 .page_cover {
     position: fixed;
     height: 0;
@@ -126,6 +141,7 @@ body,
     transition: height 0s, width 0s, background-color 0.5s;
 }
 
+/* styleing of the nav bar.  */
 .nav_bar {
     /*set to same as scrollposition.js final color incase no javascript is enabled*/
     background-color: #ffffffff;
@@ -136,10 +152,13 @@ body,
     position: fixed;
     left: 0px;
     top: 0px;
+    /* so that there is no dealy on the scrollpostions function */
     transition: 0s;
     user-select: none;
 }
 
+/* the logo that is within the navbar */
+/* postion is fixed as in the html page it is not within the nav bar in order for the moblie nav bar to work */
 .nav_logo {
     position: fixed;
     top: 0;
@@ -155,12 +174,15 @@ body,
     user-select: none;
 }
 
+/* nav_bar links grouped */
 .nav_bar_links {
     float: right;
     padding: 0 64px 0 0;
 }
 
+/* styleing of the nav bar links  */
 .nav_bar a,
+/* also includes the dropdown links as they use the same style */
 .nav_bar .drop_down a {
     font-family: 'titillium web', sans-serif;
     color: #1E1F26;
@@ -175,17 +197,20 @@ body,
     font-weight: bold;
 }
 
+/* hover effect of nav bar links */
 .nav_bar a:hover {
     color: #000;
     text-decoration: none;
 
 }
 
+/* contianer of the dropdown arrow indicating the avible drop down menu */
 .nav_bar .arrow_container {
     display: inline;
     margin-left: 5px;
 }
 
+/* styleing of the 2 <i> in order to shape the down arrow */
 .nav_bar .arrow_container i {
     box-sizing: border-box;
     display: inline-block;
@@ -202,6 +227,16 @@ body,
     transform: rotate(-45deg) translateX(-3px);
 }
 
+/* if a hover effect of the nav bar links is reqired
+will need javascript as also needs to display the hover effect when in side the dropdown menu
+.nav_bar a:hover .arrow_container i {
+    transform: rotate(-45deg)
+}
+.nav_bar a:hover .arrow_container i:last-of-type {
+    transform: rotate(45deg)
+} */
+/* styling of drop down menu hidden by default */
+/* sized using max-height so that it can be animaited while also using height auto to allow for more flexiblity */
 .nav_bar .drop_down {
     background-color: #fff;
     position: fixed;
@@ -213,12 +248,13 @@ body,
     transition: 0.5s;
 }
 
+/* class opened is added to the dropdown by javascript when opened */
 .nav_bar .drop_down.opened {
     max-height: 600px;
     z-index: 1002;
 }
 
-
+/* moblie nav bar button. hidden for desktop page */
 .nav_btn {
     display: none;
 }
@@ -233,11 +269,13 @@ body,
     width: 100%;
 }
 
+/* styling of the full page parallax image at the top of the page */
 .parallax.full {
     height: 100vh;
 
 }
 
+/* styling of the smaller paralax images throughout the pages */
 .parallax.small {
     height: 40vh;
     background-color: #00000050;
@@ -246,7 +284,10 @@ body,
 
 }
 
+
+
 /*footer*/
+
 footer {
     background-color: #1E1F26;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -258,13 +299,13 @@ footer {
     padding: 45px 50px;
 }
 
+/* copy right text in the footer */
 footer .footer-left p {
     color: #8f9296;
     font-size: 14px;
 }
 
 /* Footer links */
-
 footer p.footer-links {
     font-size: 18px;
     font-weight: bold;
@@ -287,6 +328,7 @@ footer .footer-right {
     max-width: 180px;
 }
 
+/* footer right social link */
 footer .footer-right a img,
 footer .footer-right a {
     height: 48px;
@@ -295,6 +337,8 @@ footer .footer-right a {
     cursor: pointer;
 }
 
+/* darkmode switch contianer */
+/* style could be reused to make athother switch */
 .switch_container {
     display: inline-block;
     height: 35px;
@@ -304,7 +348,7 @@ footer .footer-right a {
     transform: translatey(-6px);
 }
 
-
+/* styleing of the text under the switch */
 .switch_container .title {
     transform: translate(-26px, 14px);
     text-align: center;
@@ -313,6 +357,8 @@ footer .footer-right a {
 
 }
 
+/* styling of the dark mode switch */
+/* style mostly needed to remove the default button styling that chrome adds */
 .switch {
     text-align: center;
     display: inline-block;
@@ -325,16 +371,17 @@ footer .footer-right a {
     background: none;
     border: none;
     outline: none;
-    /*for chrome moblie*/
+    /*for chrome moblie to remove selection color*/
     -webkit-tap-highlight-color: transparent;
 }
 
+/* browser changes styling on of button on click and hover so to remove change */
 .switch:hover,
-.switch:focus,
-.switch:active {
+.switch:focus {
     background-color: #00000000;
 }
 
+/* "rail" of the switch */
 i.rail {
     display: inline-block;
     background-color: #808080a0;
@@ -343,6 +390,7 @@ i.rail {
     width: 35px;
 }
 
+/* circluar bit of the switch */
 i.knob {
     background-color: #f1f1f1;
     height: 20px;
@@ -352,6 +400,7 @@ i.knob {
     transform: translate(-3px, -3px);
 }
 
+/* social media links */
 .ir {
     display: inline-block;
     cursor: pointer;
@@ -360,10 +409,12 @@ i.knob {
     border-radius: 20%;
 }
 
+/* color within the svg */
 .ir svg {
     fill: #fff;
 }
 
+/* sytyle on hover of the socil medai links */
 .ir:hover {
     transform: scale(1.1);
     background-color: #3C5A99;
@@ -377,33 +428,39 @@ i.knob {
 
 
 /*dark mode webstyle change*/
-
+/* backfound colour of the page */
 body.dark,
 .dark .main {
     background-color: #111
 }
 
+/* down arow on the links for the dropdown indicater */
 .dark .nav_bar .arrow_container i {
     background-color: #ddd;
 }
 
+/* color of the text within the nav bar */
 .dark .nav_bar a,
 .dark .nav_logo {
     color: #ddd;
 }
-.dark .nav_bar a:hover {
+
+.dark .nav_bar a:hover .dark .nav_logo:hover {
     color: #fff;
 }
 
+/* styling of the dropdown menu on dark mode */
 .dark .nav_bar .drop_down {
     background-color: #202020;
 }
 
+/* darkening effect on the full screen parllax image in order to reduce brightness */
 .dark .parallax.full {
     background-color: #00000030;
     background-blend-mode: multiply;
 }
 
+/* styling of content in dark mode */
 .dark .content {
     background-color: #202020;
     /* box-shadow: 0 0 0 1px #333; */
@@ -411,18 +468,22 @@ body.dark,
     /* border: 1px #333 solid; */
 }
 
+/* color of text in dark mode */
 .dark p {
     color: #ddd;
 }
 
+/* changing of style of the dark mode switch so that it looks as if dark mode is on */
 .dark i.rail {
     background-color: #5085a5;
 }
 
+/* moves the knobs so that the switch is in its on postion */
 .dark i.knob {
     transform: translate(18px, -3px);
 }
 
+/* color of the headings when dark mode is enabled */
 .dark h1,
 .dark h2,
 .dark h3,
@@ -430,40 +491,49 @@ body.dark,
     color: #eee;
 }
 
+/* site for moblie and tablets */
 @media screen and (max-width: 1024px) {
+
+    /* color of the nav bar on moblie when dark mode is enabed */
     .dark .moblie_nav {
         background-color: #202020;
     }
 
+    /* color of the nav button when dark mode is enabed */
     .dark .nav_btn i {
         background-color: #ddd;
     }
 
 
 
-
+    /* moblie and tabet code for light mode */
 
     /*moblie site */
     #main {
+        /* aniamtion timing is set as the antimation time of the navbar openingn is 0.5s */
         transition: margin-left .5s ease, background-color .5s ease;
         padding: 64px 0 0 0;
     }
 
+    /* remvoes the full screen parallax image from the page */
     .parallax.full {
         display: none;
     }
 
+    /* coltainer for h1 */
     .parallax_h1_contianer {
         line-height: 40vh;
         text-align: center;
     }
 
+    /* used along with its container and using inline-flex as if line-height 40vh was used to center the text it would not work if 2 lines of text are required for the page*/
     .main .parallax h1 {
         display: inline-flex;
         line-height: 40px;
         text-align: center;
     }
 
+    /* sizes for the headings on mobie*/
     h1 {
         font-size: 28px;
         line-height: 44px;
@@ -476,6 +546,7 @@ body.dark,
         margin-bottom: 12px;
     }
 
+    /* sets the size of the content card and links on the moutniatn and canoe page full width of the page */
     .content,
     .content.small {
         width: 100%;
@@ -483,20 +554,25 @@ body.dark,
         display: block;
     }
 
+    /* removes the scaling hover effect on moblie*/
     .content.small:hover {
         transform: none;
     }
 
+    /* removing display flex used on the destkop site */
     .row {
         display: block;
     }
 
+    /* text on the tablet page */
+    /* there is another media qurey for srinking the size of the text for the moblie page */
     .content p {
         margin: auto;
         font-size: 18px;
         line-height: 30px;
     }
 
+    /* centering the image  */
     .content .img_container {
         display: block;
         padding: 0 0 10px 0;
@@ -507,13 +583,16 @@ body.dark,
     .content .img_container img {
         margin: auto;
         display: block;
+        /* used max height and max width so that the image does not get to large on landscape or tablet devices */
         max-width: 100%;
         max-height: 50vh;
     }
+    /* removeing the width 100% for the link images */
     .content.small .img_container img {
-        width:auto;
+        width: auto;
     }
-
+    /* styling of the moblie nav bar */
+    /* different class as the desktop nav bar as the desktop nav bar is hidden to the side so that it can be opened with a button */
     .moblie_nav {
         position: fixed;
         top: 0;
@@ -525,7 +604,7 @@ body.dark,
         z-index: 40;
 
     }
-
+    /* banner inside the moblie nav bar */
     .nav_logo {
         position: relative;
         font-size: 30px;
@@ -535,7 +614,7 @@ body.dark,
     .nav_bar_links {
         padding: 0;
     }
-
+    /* nav bar is set to width 0 and this is changed by javascript when the user opens the nav bar on the moblie page */
     .nav_bar {
         height: 100%;
         width: 0;
@@ -558,7 +637,7 @@ body.dark,
         z-index: 50;
     }
 
-    /* The navigation menu links */
+    /* The navigation menu links on the side moblie nav bar */
     .nav_bar a {
         padding: 8px 72px 8px 32px;
         text-decoration: none;
@@ -568,11 +647,11 @@ body.dark,
         display: block;
         transition: 0.3s;
     }
-
+    /* removes the change in color hover effect */
     .nav_bar a:hover {
         color: #818181;
     }
-
+    /* drop down menu is not avible on te moblie site so the drop down arrows are not required */
     .nav_bar .arrow_container {
         display: none;
 
@@ -590,7 +669,7 @@ body.dark,
         border-radius: 50%;
         transition: 0.5s;
     }
-
+    /* bring the close button behind the open button. it is brought forward when the user opens the nav bar */
     .close_btn {
         z-index: -1;
     }
@@ -612,25 +691,20 @@ body.dark,
 
     .nav_btn i:nth-child(2) {
         margin-top: 4px;
-        opacity: 1;
     }
 
     .nav_btn i:nth-child(3) {
         margin-top: 4px;
     }
-
+    /* timeing is set to 0.5 as this is the timing of the opening of the nav bar */
     .nav_btn i {
         transition: transform 0.5s ease;
         animation-timing-function: ease-out;
     }
-
+    /* class opened is added in order to make the button become a back arrow when the nav bar is open on movlie */
     .nav_btn.opened i:nth-child(1) {
         transform: translate(7.2px, 1.6px) rotate(45deg);
         width: 14.2px;
-    }
-
-    .nav_btn.opened i:nth-child(2) {
-        opacity: 1;
     }
 
     .nav_btn.opened i:nth-child(3) {
@@ -653,17 +727,19 @@ body.dark,
         line-height: 1.8;
     }
 }
-
+/* in order to change font size for moblie  */
 @media screen and (max-width: 512px) {
     .content p {
         margin: auto;
         font-size: 14px;
         line-height: 24px;
-    } 
+    }
+
     h1 {
         font-size: 24px;
-        line-height:40px;
+        line-height: 40px;
     }
+
     h2 {
         font-size: 20px;
         line-height: 32px;
