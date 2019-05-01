@@ -65,7 +65,17 @@ function scrollFunction(dropDownOpened) {
             var scrollPer = ((document.documentElement.scrollTop) / (winheight - navBar.offsetHeight));
             navBar.style.backgroundColor = "rgba(" + (or + ((fr - or) * scrollPer)) + "," + (og + ((fg - og) * scrollPer)) + "," + (ob + ((fb - ob) * scrollPer)) + "," + (oa + ((fa - oa) * scrollPer)) + ")";
             navBar.style.boxShadow = "none";
+            //removes scroll button when scrolling down
+            if (scrollPer > 0) {
+                document.getElementById("section02").style.display = "none";
+            }   else {
+                document.getElementById("section02").style.display = "inline-block";
+            }
 
         }
     }
+}
+// allows the scroll button to work
+function scrollDown() {
+    scrollTo(0, (window.innerHeight + 1 - document.getElementById("mySidenav").offsetHeight));
 }
