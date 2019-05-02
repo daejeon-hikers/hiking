@@ -54,12 +54,23 @@
 .parallax.YeongSang1 {
     background-image: url("images/canoeing/YeongSang/parallax.JPG")
 }
+
 .parallax.YeongSang2 {
     background-image: url("images/canoeing/YeongSang/riding_parallax.JPG")
 }
+
 .parallax.YeongSang3 {
     background-image: url("images/canoeing/YeongSang/flowers_parallax.JPG")
 }
- .parallax.about_us1 {
+.parallax.Kum1 {
+    background-image: url("images/canoeing/Kum/parallax.JPG")
+}
+.parallax.Kum2 {
+    background-image: url("images/canoeing/Kum/sunset_parallax.JPG")
+}
+.parallax.Kum3 {
+    background-image: url("images/canoeing/Kum/expo_parallax.JPG")
+}
+.parallax.about_us1 {
     background-image: url("images/parallax_group.jpg");
 }
