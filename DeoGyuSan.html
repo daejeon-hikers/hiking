@@ -4,7 +4,7 @@
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>Daejeon Hikers - Mountains</title>
+    <title>Daejeon Hikers - Mountains: DeoGyuSan</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="parallax_images.css" rel="stylesheet" type="text/css">
     <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
@@ -12,57 +12,54 @@
     <script src="javascript/scrollposition.js"></script>
     <script src="javascript/sideNav.js"></script>
 </head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
 
 <body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
     <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
     <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
         <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
         <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
         <div class="nav_logo">Daejeon Hikers</div>
     </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
     <div id="mySidenav" class="nav_bar">
         <div class="nav_bar_links">
             <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
             </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
                 onmouseover="dropDownOpen('Mountain')">Mountains
                 <div class="arrow_container"><i></i><i></i></div>
-            </a><a href="canoes.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
                 <div class="arrow_container"><i></i><i></i></div>
             </a><a href="about_us.html">About Us</a>
         </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
         <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
             onmouseout="dropDownClose('Mountain')">
-            <a href="books.html">Mountain 1
-            </a><a href="books.html">Mountain 2
-            </a><a href="books.html">Mountain 3
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
             </a><a href="books.html">Mountain 4
             </a><br><a href="books.html">Mountain 5
             </a><a href="books.html">Mountain 6
             </a><a href="books.html">Mountain 7
             </a><a href="books.html">Mountain 8
-            </a><br><a href="books.html">Mountain 9
-            </a><a href="books.html">Mountain 10
-            </a><a href="books.html">Mountain 11
-            </a><a href="books.html">Mountain 12
-            </a><br><a href="books.html">Mountain 13
-            </a><a href="books.html">Mountain 14</a>
+            </a>
         </div>
         <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
             onmouseout="dropDownClose('Canoe')">
-            <a href="books.html">River 1
-            </a><a href="books.html">River 2
-            </a><a href="books.html">River 3
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
             </a><a href="books.html">River 4
             </a><br><a href="books.html">River 5
             </a><a href="books.html">River 6
             </a><a href="books.html">River 7
             </a><a href="books.html">River 8
-            </a><br><a href="books.html">River 9
-            </a><a href="books.html">River 10
-            </a><a href="books.html">River 11
-            </a><a href="books.html">River 12
-            </a><br><a href="books.html">River 13
-            </a><a href="books.html">River 14</a>
+            </a>
         </div>
     </div>
 
@@ -155,7 +152,7 @@
                     ·
                     <a href="mountains.html">Mountians</a>
                     ·
-                    <a href="canoeing.html">Canoeing</a>
+                    <a href="canoe.html">Canoeing</a>
                     ·
                     <a href="about_us.html">About Us</a>
                 </p>
