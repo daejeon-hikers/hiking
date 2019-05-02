@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode(); enableScroll()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoes.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="books.html">Mountain 2
+            </a><a href="books.html">Mountain 3
+            </a><a href="books.html">Mountain 4
+            </a><br><a href="books.html">Mountain 5
+            </a><a href="books.html">Mountain 6
+            </a><a href="books.html">Mountain 7
+            </a><a href="books.html">Mountain 8
+            </a><br><a href="books.html">Mountain 9
+            </a><a href="books.html">Mountain 10
+            </a><a href="books.html">Mountain 11
+            </a><a href="books.html">Mountain 12
+            </a><br><a href="books.html">Mountain 13
+            </a><a href="books.html">Mountain 14</a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="books.html">River 1
+            </a><a href="books.html">River 2
+            </a><a href="books.html">River 3
+            </a><a href="books.html">River 4
+            </a><br><a href="books.html">River 5
+            </a><a href="books.html">River 6
+            </a><a href="books.html">River 7
+            </a><a href="books.html">River 8
+            </a><br><a href="books.html">River 9
+            </a><a href="books.html">River 10
+            </a><a href="books.html">River 11
+            </a><a href="books.html">River 12
+            </a><br><a href="books.html">River 13
+            </a><a href="books.html">River 14</a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+        <!-- full screen parallax image  -->
+        <div class="parallax YeongSang1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h1>Canoe Trip on the Yeoungsan (영산강) River</h1>
+            <div class="img_container left">
+                <img src="images/canoeing/YeongSang/stand_on_bridge.JPG">
+            </div>
+            <p>
+                This was my first trip with Hobbs, a fellow professor at KAIST. He was very experienced from his youth
+                with camping and canoeing as his family had done this every summer when he was growing up. We met at
+                KAIST on Thursday, June 14th 2012, around 2 p.m., loaded the canoe on the car roof, organized all the
+                food and camping gear into their respective bags and put everything into the car. We had a hard time
+                finding a place to park the car as the roads were really confusing, but finally found one location a
+                little distance above GwangJu City (광주시). The negative aspects of this location were the shallow nature
+                of the river here at this time of year and the added distance we would have to paddle to reach our goal.
+                We had to walk the loaded canoe for most of the rest of the day. This was really slow going and it meant
+                that we were still trying to reach our first day’s goal at 7: 30 p.m. and did not find a suitable
+                campsite until after 8 p.m. It also meant that we had to forgo a cooked meal and eat peanut butter and
+                jelly sandwiches. Unfortunately, it was too late to take a swim as we had to get up early the next
+                morning. We camped on this small island with our North Face VE24 Tent.
+            </p>
+        </div>
+
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Challenges on the river</h2>
+            <div class="img_container right">
+                <img src="images/canoeing/YeongSang/fish_ladder.JPG">
+            </div>
+            <p>
+                We were up early the next day, Friday, June 15, th 2012 and on the river by eight thirty. The river was
+                still too shallow so we walked the canoe along and finally it became deep enough so we could finally
+                make time paddling the canoe on the river. We immediately encountered a number of stone walkways and
+                small dams that were easy to get over. All of the recently built dams had fish ladders that greatly
+                facilitated the trip downstream. These can be seen in the pictures. One can see the improvements in dam
+                construction by comparing the dams on the Geum (금강) River that were constructed during the Park Chun Hee
+                (박정희) period in the 1970s and those on this river. I do not remember any fish ladders on the Geum (금강)
+                River. The greatest challenge on the trip was the dam encountered in the afternoon. This was constructed
+                a year before as a part of the Four Rivers Project. It was a huge dam and actually had a lock for boats
+                to pass through but for some reason it was not operating when we arrived. We were lucky as there were a
+                number of people visiting the dam site and they assisted our moving the canoe and all our gear around
+                the structure. Still it took over an hour to complete this process. A few kilometers downstream we set
+                up the tent around seven thirty on an island a little distance above another dam. This island was made
+                up of the material that had been dredged from the bottom of the river the prior year. It was a beautiful
+                location with abundant wild flowers that appeared to be part of the reclamation process. Now this time
+                we had an opportunity to go swimming and the water felt really great after a rather difficult day. We
+                greatly enjoyed the swim and admired the sunset in the distance as it became dark.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small ">
+            <div class="parallax_h1_contianer">
+                <h1>Canoeing along the river</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Flying Fish</h2>
+            <div class="img_container left">
+                <img src="images/canoeing/YeongSang/fish.JPG">
+            </div>
+            <p>
+                The next morning, Saturday June 16th, 2012, we were again up early and after breakfast were back on the
+                river by 8 a.m. By 9:30 a.m. we encountered another dam in the process of construction. We were able to
+                carry the canoe around this one as it had not been completed. But a little before 1 p.m. we encountered
+                the largest dam I have seen on any of the river trips. It was huge and again there was a boat lock but
+                it was not operating and we had to unload the canoe and carry all the gear around this obstacle. Because
+                of the distance of the carry this bypass took us over 1.5 hours. Luckily, we were able to receive help
+                without which it would have taken many more trips to bring the gear to the new location for the boat.
+                Again the people found it difficult to understand why one would travel so far on the river and they
+                feared we would drown on the way. Later in the day we were lucky as the wind was from behind us, a rare
+                event. Usually in the evening when near the coast the wind was in our face. We did take one of the mats
+                that we had brought and Hobbs held it up like a sail. This section of the river had a river bank that
+                was covered with reeds making it difficult to find a camping site for the night. Around us there were a
+                large number of striped bass jumping high into the air and one large one jumped into the canoe. I asked
+                Hobbs to put his foot on it, he did and I looked forward to cooking fresh fish for dinner. Finally
+                around 8:30 p.m. we found a cement landing where a boat was docked and we decided to make this our camp
+                site for the night. We were getting desperate at the time because it was fast becoming dark, so this
+                location was a godsend. We cooked the fish up for our diner and it made the best meal of any of the
+                canoe trips.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small YeongSang3">
+            <div class="parallax_h1_contianer">
+                <h1>Mission accomplished</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <div class="img_container right">
+                <img src="images/canoeing/YeongSang/camp_site.JPG">
+            </div>
+            <p>
+                The next day was Sunday, June 17th, 2012 and we were up early and I was cooking breakfast by 6:30 a.m.
+                It was a beautiful day and we were looking forward to arriving at our destination of MokPo (목포) by noon.
+                We weren’t sure of our location but thought that we were within five hours of our destination. Our canoe
+                immediately passed by a dredge that was busy digging out sediment on the bottom of the river. Each
+                dredge either had a barge next to it to collect the river bottom dirt or had a long hose supported by
+                flotation devices that lead to the shore and up the slope far enough so that the sediment that was
+                dumped did not flow back into the river. We passed by the beautiful area of NaJu (나주). There was an
+                island there that looked like something out of a picture book. I put away in my head that someday we
+                should return to this location when the bass were running and fish for a year’s supply of this tasty
+                food. Related to this you do not need a fishing license to fish in South Korea. Lucky for us the wind
+                did not pick up and pushing hard we arrived at a good docking location by 1 p.m. I left Hobbs at the
+                boat ramp where a car picked me up and dropped me at the bus terminal. From there I took a bus to
+                GwangJu (광주) where I took a taxi to the location we had spotted the car. I then drove from Gwangju (광주)
+                to MokPo (목포) and we were ready to leave by 6 p.m. We arrived back at KAIST around 9:45 p.m. We then off
+                loaded the canoe and gear and I arrived home around 11 p.m. It had been a long day but we were satisfied
+                that we had completed canoeing the full distance of the YeongSan (영산강) River from GwangJu (광주) to
+                MokPo(목포).
+            </p>
+        </div>
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

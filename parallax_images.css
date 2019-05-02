@@ -16,17 +16,50 @@
 
 
 .parallax.mountains1 {
-    background-image: url("images/parallax_bomon2.jpg")
+    background-image: url("images/parallax_bomon2.jpg");
 }
 
 .parallax.DeoGyuSan1 {
-    background-image: url("images/mountains/DeoGyuSan/parallax.jpg")
+    background-image: url("images/mountains/DeoGyuSan/parallax.jpg");
 }
 
 .parallax.DeoGyuSan2 {
-    background-image: url("images/mountains/DeoGyuSan/temple_parallax.JPG")
+    background-image: url("images/mountains/DeoGyuSan/temple_parallax.JPG");
 }
 
-.parallax.about_us1 {
-    background-image: url("images/parallax_group.jpg")
+.parallax.OuSeongEeSan1 {
+    background-image: url("images/mountains/OuSeongEeSan/parallax.JPG");
+}
+
+.parallax.ManInSan1 {
+    background-image: url("images/mountains/ManInSan/parallax.jpg")
+}
+
+.parallax.ManInSan2 {
+    background-image: url("images/mountains/ManInSan/landscape_parallax.JPG")
+}
+
+.parallax.canoe {
+    background-image: url("images/canoe_parallax.JPG")
+}
+
+.parallax.NakDong1 {
+    background-image: url("images/canoeing/NakDong/parallax.JPG")
+}
+
+.parallax.NakDong2 {
+    background-image: url("images/canoeing/NakDong/island_parallax.JPG")
+}
+
+.parallax.YeongSang1 {
+    background-image: url("images/canoeing/YeongSang/parallax.JPG")
+}
+.parallax.YeongSang2 {
+    background-image: url("images/canoeing/YeongSang/riding_parallax.JPG")
+}
+.parallax.YeongSang3 {
+    background-image: url("images/canoeing/YeongSang/flowers_parallax.JPG")
+}
+ .parallax.about_us1 {
+    background-image: url("images/parallax_group.jpg");
 }

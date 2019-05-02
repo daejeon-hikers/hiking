@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode(); enableScroll()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoes.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="books.html">Mountain 2
+            </a><a href="books.html">Mountain 3
+            </a><a href="books.html">Mountain 4
+            </a><br><a href="books.html">Mountain 5
+            </a><a href="books.html">Mountain 6
+            </a><a href="books.html">Mountain 7
+            </a><a href="books.html">Mountain 8
+            </a><br><a href="books.html">Mountain 9
+            </a><a href="books.html">Mountain 10
+            </a><a href="books.html">Mountain 11
+            </a><a href="books.html">Mountain 12
+            </a><br><a href="books.html">Mountain 13
+            </a><a href="books.html">Mountain 14</a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="books.html">River 1
+            </a><a href="books.html">River 2
+            </a><a href="books.html">River 3
+            </a><a href="books.html">River 4
+            </a><br><a href="books.html">River 5
+            </a><a href="books.html">River 6
+            </a><a href="books.html">River 7
+            </a><a href="books.html">River 8
+            </a><br><a href="books.html">River 9
+            </a><a href="books.html">River 10
+            </a><a href="books.html">River 11
+            </a><a href="books.html">River 12
+            </a><br><a href="books.html">River 13
+            </a><a href="books.html">River 14</a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax NakDong1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Canoe Trip from Daegu (대구) to Busan (부산)</h2>
+            <div class="img_container left">
+                <img src="images/canoeing/NakDong/island.JPG">
+            </div>
+            <p>
+                This trip occurred during the month of August 2010. This is not the ideal time for a trip on a river in
+                Korea, but it was the only time that my partner was available. I had worried about the monsoon but that
+                year it had rained very heavily in July and August was dry. It did not mean that the monsoon did not
+                affect us as the NakDong (낙동강) River had flooded in July and this added the difficulty on finding a
+                location to land that was not covered with a fine mud deposited during the recent flood. This was the
+                usual three day trip similar to the trip on the Guem (금강) River trip in 2008. The major difference with
+                the last river was the lack of dams on this river. Related to the history of Korea this river had a
+                significant role in saving South Korea from being overrun during the first months of the Korean War in
+                1950. This river formed the front line of the war in July, August and the first half of September 1950.
+                More information about the river is found at the end of this document. The proposal was optimistic as we
+                never made it all the way to Busan. My canoeing partner for this trip would be Dr. Aviv Seger, a fellow
+                professor at Korea Institute of Science and Technology, KAIST.
+            </p>
+        </div>
+
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Proposed NakDong (낙동강) River Trip</h2>
+            <div class="img_container right">
+                <img src="images/canoeing/NakDong/apartment.JPG">
+            </div>
+            <p>
+                Enclosed is the information requested regarding the planned canoe river trip on the NakDong (낙동강) River
+                from Daegu (대구) to Busan (부산). The total length of the trip is 167 Km. We plan to start the trip on
+                August 20th in the morning near the school of DaSanChung Kyeo, to the west of Daegu (대구) and travel by
+                canoe downstream. We will canoe on the river the first day until the location where Route 67 crosses the
+                river is reached; a distance on the river of about 25 Km. The closest location name is Ugok-myeon (우곡면).
+                We will stay there overnight along the river and the next day at that location, August 21st, will
+                continue downstream on the river to where Route 45 crosses the river at Chilseo-myeon (칠서면). The
+                distance traveled that day is about 44 Km. On the third day, August 22nd, we plan to continue until we
+                reach the location on the river where Route 55 crosses the river at Samgyeongri where we will camp along
+                the river near the canoe. The distance traveled that day is 53 Km. The next morning, August 23rd, we
+                will continue on to Busan City arriving in the afternoon of 23rd of August. The distance traveled that
+                day is 45 Km. At Busan City we will take the canoe out of the river near Deadonggoungkyo and put the
+                canoe on the roof of the car and return to Daejeon that evening.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small NakDong2">
+            <div class="parallax_h1_contianer">
+                <h1>The NakDong (낙동강) River Trip Description</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <div class="img_container left">
+                <img src="images/canoeing/NakDong/picture_of_canoe.JPG">
+            </div>
+            <p>
+                We loaded the car and put the canoe on the roof and left Daejeon (대전) for Daegu (대구) in the morning of
+                Friday August 20th, 2010. It took up a while to find a location described above in the proposal where
+                and we never did find the school mentioned in the above proposal. We drove along the road west of Daegu
+                until it approached as near as possible to the river. Looking at the photographs you can see that we
+                still had a good distance to traverse from the road to get all the gear and the canoe to the river’s
+                edge. After completing this part of the trip I had to spot the car in Busan and return. Busan is the
+                second largest city in South Korea and it took me a while to find a suitable parking area. That night I
+                slept in the car. Early in the morning of the second day, Saturday the 21st, I returned to the canoe and
+                we loaded up the canoe with the camping gear and food and were finally on the river by ten thirty. We
+                soon encounter rapids under the bridges. A few of these required that we exit the canoe and look for the
+                best approach to through the rapids. I always look to where the water is piling up and the waves largest
+                as that location would be the deepest part of the river in the rapids. Around 6 p.m. after travelling
+                about 45 kilometers we pitched the tent and prepared the dinner in a relatively clean location. We knew
+                this as we had the print out of the river in a water proof container that we checked along the way.
+                After our dinner, a group of Philippine workers from a local manufacturing plant came out on a motor
+                cycle and went swimming in the river near us. They were curious as to what we were doing. They seemed
+                very surprised when we told them that we were on the way to Busan and had been in Daegu that morning.
+                They looked at us and looked at the canoe and shook their heads like we were crazy!
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Pollution in the river</h2>
+            <div class="img_container right">
+                <img src="images/canoeing/NakDong/pollution.JPG">
+            </div>
+            <p>
+                The next morning, Sunday August the 22nd, we had eaten breakfast and packed the canoe ready to leave by
+                8:30 when the owner of the manufacturing plant came out to greet us. Probably the Pilipino workers had
+                told him about us that morning. He implied that we would never make it to Busan (He was right as we
+                found out the next day). We were soon on the river passing large dredges that were a part of the Four
+                Rivers Project, a major effort of the South Korean MB Lee Administration. A major goal of this project
+                was to clean out the river channels of the four major Korean rivers decreasing the chance of flooding by
+                increasing the capacity of the river channel. Much of this debris in the rivers was evidently caused by
+                the denudation of the Korean hills during the Korean War of 1950-1953. We soon found that the major
+                challenge for the trip would be the sun and related heat which sapped our energy and that combined with
+                the slow current meant that we only made about 45 kilometers that day. We set up a camp site on a sandy
+                bar around 6:30 in the evening. The next morning, we were back on the river by 8:30 and both of us were
+                relieved that this was the last day. That meant that it would not be a full day of paddling as after
+                that I had to go to Busan and retrieve the car because we had to be back at KAIST before too late in the
+                evening. This part of the river was very smelly and had many clumps of pollution as shown in the
+                photographs. In fact it was the largest amount of pollution that I have ever seen on a river. We also
+                passed a few more dredges and found a location that seemed to be a gun emplacement at the base of a
+                rocky cliff on the eastern side of the river. We had lunch there and continued on till we reached the
+                location where two large bridges cross the river. This was a perfect location to end the trip as the
+                road was near the river and there was also a bus stop in the nearby town that I could take a bus to
+                Busan. My partner packed up while I arrived at the car around 4:30 p.m. and then to the location where
+                we had landed with the canoe around 6:45 p.m. We arrived in Daejeon around 10:30 PM and waited until the
+                next morning to take the canoe off the car roof, organize all the gear and return the canoe to its
+                storage location. We may have reached Busan if we had continued on the next day, but I am not sure of
+                this because of the slow current and the heat.
+            </p>
+        </div>
+
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

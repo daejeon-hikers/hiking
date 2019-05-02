@@ -12,28 +12,35 @@
     <script src="javascript/scrollposition.js"></script>
     <script src="javascript/sideNav.js"></script>
 </head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
 
 <body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
     <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
     <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
         <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
         <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
         <div class="nav_logo">Daejeon Hikers</div>
     </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
     <div id="mySidenav" class="nav_bar">
         <div class="nav_bar_links">
             <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
             </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
                 onmouseover="dropDownOpen('Mountain')">Mountains
                 <div class="arrow_container"><i></i><i></i></div>
-            </a><a href="canoes.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
                 <div class="arrow_container"><i></i><i></i></div>
             </a><a href="about_us.html">About Us</a>
         </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
         <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
             onmouseout="dropDownClose('Mountain')">
             <a href="DeoGyuSan.html">DeoGyuSan
-            </a><a href="books.html">Mountain 2
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
             </a><a href="books.html">Mountain 3
             </a><a href="books.html">Mountain 4
             </a><br><a href="books.html">Mountain 5
@@ -69,13 +76,14 @@
     <!-- Add all page content inside this div -->
     <div id="main" class="main">
 
-
+        <!-- full screen parallax image  -->
         <div class="parallax home1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
             <section id="section02" class="demo">
                 <button onclick="scrollDown()"><span></span>Scroll</button>
             </section>
         </div>
-
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <h1>Introduction to the Mountains of Central Korea</h1>
             <p>
@@ -90,11 +98,9 @@
                 beautiful sound of these large bells.
             </p>
         </div>
-
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
-            <div class="parallax_h1_contianer">
-                <h2>Brief word about the Geology of the Korean Mountains</h2>
-            </div>
+            <h2>Brief word about the Geology of the Korean Mountains</h2>
             <div class="img_container left">
                 <img src="images/map_MaEeeSan.jpg">
             </div>
@@ -109,6 +115,7 @@
                 the Korean plateau.
             </p>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <h2>Geological History</h2>
             <div class="img_container right">
@@ -135,6 +142,7 @@
                 rivers follow as illustrated on the above diagram (map).
             </p>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <h2>Geum River (금강) River path</h2>
             <div class="img_container left">
@@ -150,11 +158,13 @@
                 nature of the Korean Peninsula. Also realize that the collision of India with southern Asia affected the
                 Korean peninsula even though it seems very far away.</p>
         </div>
+        <!-- small parallax -->
         <div class="parallax small home2">
             <div class="parallax_h1_contianer">
                 <h1>Word about the hiking trails of South Korea</h1>
             </div>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <div class="img_container right">
                 <img src="images/group_photo.jpg">
@@ -182,6 +192,7 @@
                 direction down to the beginning of the trail, including the distance to the listed feature.
             </p>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <h2>Forest fires</h2>
             <div class="img_container left">
@@ -199,11 +210,13 @@
                 have never seen them). So, it is best to never have an open flame while hiking it the Korean forests.
             </p>
         </div>
+
         <div class="parallax small home3">
             <div class="parallax_h1_contianer">
                 <h1>Items Seen along the Trail for safety and emergencies</h1>
             </div>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <p>There are many items that you will observe along the trails that have and do not have counterparts in the
                 West. One interesting item is the post with numbers that are used to give your location in longitude and
@@ -215,6 +228,7 @@
                 paths. Within ten minutes the fire trucks had arrived and were soon pumping water on the fire and within
                 five minutes more it was extinguished. In this case a road was near where the fire had started. </p>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <h2>Location signs</h2>
             <div class="img_container left double">
@@ -231,6 +245,7 @@
                 corner of Korea even hiking trails.
             </p>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <h2>First aid</h2>
             <div class="img_container right double">
@@ -246,6 +261,7 @@
                 showing how to do basic CPR techniques together with the trail map.
             </p>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <h2>Getting Lost</h2>
             <div class="img_container left">
@@ -267,6 +283,7 @@
                 <h1> Places to stay in the mountains</h1>
             </div>
         </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
             <p>
                 Many of the highest mountains of Korea have shelters where you can stay. Most of these require you to
@@ -285,13 +302,16 @@
         <footer>
 
             <div class="footer-right">
-                <a class="icon-10 facebook" href="#" title="Facebook">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
                     <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
                             <path
                                 d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
                             </path>
-                        </svg></div>
+                        </svg>
+                    </div>
                 </a>
+                <!-- darkmode switch -->
                 <div class="switch_container">
                     <button class="switch" id="darkBtn" onclick="applyDarkmode()">
                         <i class="rail">
@@ -300,11 +320,9 @@
                     </button>
                     <div class="title">Dark Mode</div>
                 </div>
-
             </div>
-
+            <!-- links in the footer -->
             <div class="footer-left">
-
                 <p class="footer-links">
                     <a href="index.html">Home</a>
                     ·

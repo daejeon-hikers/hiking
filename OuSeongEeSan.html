@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoes.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="books.html">Mountain 2
+            </a><a href="books.html">Mountain 3
+            </a><a href="books.html">Mountain 4
+            </a><br><a href="books.html">Mountain 5
+            </a><a href="books.html">Mountain 6
+            </a><a href="books.html">Mountain 7
+            </a><a href="books.html">Mountain 8
+            </a><br><a href="books.html">Mountain 9
+            </a><a href="books.html">Mountain 10
+            </a><a href="books.html">Mountain 11
+            </a><a href="books.html">Mountain 12
+            </a><br><a href="books.html">Mountain 13
+            </a><a href="books.html">Mountain 14</a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="books.html">River 1
+            </a><a href="books.html">River 2
+            </a><a href="books.html">River 3
+            </a><a href="books.html">River 4
+            </a><br><a href="books.html">River 5
+            </a><a href="books.html">River 6
+            </a><a href="books.html">River 7
+            </a><a href="books.html">River 8
+            </a><br><a href="books.html">River 9
+            </a><a href="books.html">River 10
+            </a><a href="books.html">River 11
+            </a><a href="books.html">River 12
+            </a><br><a href="books.html">River 13
+            </a><a href="books.html">River 14</a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax OuSeongEeSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h1>OuSeongEeSan (우성이산) (January 15, 2012)</h1>
+            <div class="img_container left">
+                <img src="images/mountains/OuSeongEeSan/map.jpg">
+            </div>
+            <p>
+                We met at KAIST at 10:00 and drove to the mountain arriving around 10:30. We drove up the road adjacent
+                to Expo Park and turned right just past the Hyundae Dealer and adjacent to the road of the DaeWoo Car
+                dealer and parked on the right side of this road. The trail starts up to the left off the main road and
+                there is a sign with a map of the trails that marks the entrance to the hiking area. Up the trail from
+                the entrance sign is a shrine and memorial for the Min family ancestors. The area is a location of many
+                trails behind Expo Park and the research centers of the Daedeok (대덕) Valley. We hiked along these trails
+                and had lunch at 12:00. These trails are within city limits so very accessible for city dwellers to get
+                to by public transportation.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Ferris wheel in sight</h2>
+            <div class="img_container right">
+                <img src="images/mountains/OuSeongEeSan/ferris_wheel.JPG">
+            </div>
+            <p>
+                After lunch we explored the area trails and finally turned around to retrace our steps leading behind
+                Expo Park. We then walked down to the park and walked along the road turning right at the bridge across
+                the Gapcheon (갑천) River and up the road to where the cars were parked. The Ferris wheel in the picture
+                is inside of Kumdoori land, an amusement park that was at the time next to Expo Park. As this hike was
+                some years ago if you were to do this hike today you would no longer see the same view as both Kumdoori
+                land park and Expo park have been torn away and replaced by movie studios and other developments. In
+                Korea the only thing constant is change. At least despite the development and new construction the
+                hiking trails remain for the city residents to enjoy as you will find many city dwellers having a
+                morning or evening jog.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Group photo</h2>
+            <div class="img_container left">
+                <img src="images/mountains/OuSeongEeSan/group_photo.jpg">
+            </div>
+            <p>
+                This was an quite easy hike with few steep trails and lots of level trails with city views. There were
+                many views of the many research centers located in this area of the city and associated apartment
+                complexes including the Expo Apartments that are adjacent to the Gapcheon (갑천) river leading up to the
+                Geumgang (금강) River. Again, if you were to compare the view of then and today you would be amazed at all
+                the new construction and apartment complexes. Here is our group photo for this hike. It was a small
+                group this day perhaps because of the frigid winter temperatures. As usual, Jong Moo is very considerate
+                to help out by carrying my dog “Bibi” who doesn’t seem to mind the cold at all and enjoys the attention.
+            </p>
+        </div>
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

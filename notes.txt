@@ -1,24 +1,26 @@
+<!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
 <div class="content">
-            <h2></h2>
-            <div class="img_container left">
-                <img src="images">
-            </div>
-            <p>
-                
-            </p>
-        </div>
+    <h2></h2>
+    <div class="img_container left">
+        <img src="images">
+    </div>
+    <p>
+        
+    </p>
+</div>
 
-
+<!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
 <div class="content">
-            <h2></h2>
-            <div class="img_container right">
-                <img src="images">
-            </div>
-            <p>
-                
-            </p>
-        </div>
+    <h2></h2>
+    <div class="img_container right">
+        <img src="images">
+    </div>
+    <p>
+        
+    </p>
+</div>
 
+<!-- small parallax -->
 <div class="parallax small ">
     <div class="parallax_h1_contianer">
         <h1></h1>

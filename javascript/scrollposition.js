@@ -58,7 +58,8 @@ function scrollFunction(dropDownOpened) {
         //style after parllax also applys when dropdown menu is open and also applys in edge and internet explorer to provide minimal support for legacy browersers
         if (document.documentElement.scrollTop > winheight - navBar.offsetHeight || dropDownOpened || /Edge/.test(navigator.userAgent) || /MSIE 9/.test(navigator.userAgent) || /MSIE 10/.test(navigator.userAgent) || /rv:11.0/.test(navigator.userAgent)) {
             navBar.style.backgroundColor = "rgba(" + fr + "," + fg + "," + fb + "," + fa + ")"
-            navBar.style.boxShadow = "0px 8px 16px 0px rgba(0, 0, 0, 0.2)"
+            navBar.style.boxShadow = "0px 8px 16px 0px rgba(0, 0, 0, 0.2)";
+            document.getElementById("section02").style.display = "none";
             //color during scrolling of the parllax
         } else {
             //portion scrolled to the end of the inital parllax

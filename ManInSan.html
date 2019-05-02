@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoes.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="books.html">Mountain 2
+            </a><a href="books.html">Mountain 3
+            </a><a href="books.html">Mountain 4
+            </a><br><a href="books.html">Mountain 5
+            </a><a href="books.html">Mountain 6
+            </a><a href="books.html">Mountain 7
+            </a><a href="books.html">Mountain 8
+            </a><br><a href="books.html">Mountain 9
+            </a><a href="books.html">Mountain 10
+            </a><a href="books.html">Mountain 11
+            </a><a href="books.html">Mountain 12
+            </a><br><a href="books.html">Mountain 13
+            </a><a href="books.html">Mountain 14</a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="books.html">River 1
+            </a><a href="books.html">River 2
+            </a><a href="books.html">River 3
+            </a><a href="books.html">River 4
+            </a><br><a href="books.html">River 5
+            </a><a href="books.html">River 6
+            </a><a href="books.html">River 7
+            </a><a href="books.html">River 8
+            </a><br><a href="books.html">River 9
+            </a><a href="books.html">River 10
+            </a><a href="books.html">River 11
+            </a><a href="books.html">River 12
+            </a><br><a href="books.html">River 13
+            </a><a href="books.html">River 14</a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax ManInSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h1>Maninsan – 만인산 (Hike of January 29, 2012)</h1>
+            <div class="img_container left">
+                <img src="images/mountains/ManInSan/map.JPG">
+            </div>
+            <p>
+                This mountain is about a 40 minute drive from KAIST to the south east of Daejeon (대전). The mountain has
+                a large parking lot at the base as it is difficult to get here without a car. There is also a fitness
+                training school nearby with rope bridges and exercise machines. Starting from the parking lot the trail
+                has a moderate grade up a paved road that turns left into a steep path in a gully with many stairs and
+                no rest areas up to the ridge where there is a gazebo at ManInRu (만인루). It is amazing to think that
+                someone had to build all those stairs going up the mountain.
+            </p>
+        </div>
+
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Group photo</h2>
+            <div class="img_container right">
+                <img src="images/mountains/ManInSan/group_photo.jpg">
+            </div>
+            <p>
+                We then turned around and went down a long ridge summit about 30 minutes (400 meters) away from the
+                gazebo and followed a moderate grade to the peak. On this hike we ate on the summit (540 meters)
+                enjoying the view and sunny weather. We then continued over the peak down along the ridge and finally
+                turning down to the first Joseon (조선) king’s placenta burial site. Here is our group photo of the day.
+                As you can see by our clothing it is a cold day but as long as you are moving you are warm. Stopping to
+                eat lunch too long reminds you of how cold the temperatures are so you need to speed up and keep moving.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small ManInSan2">
+            <div class="parallax_h1_contianer">
+                <h1>Nearby Activity</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Geological Museum</h2>
+            <div class="img_container left">
+                <img src="images/mountains/ManInSan/big_wood.JPG">
+            </div>
+            <p>
+                Near this location is a rope bridge and it is a short hike to the training school with solar panels
+                where we started. If you have time it is well worth a visit to the school’s wonderful botanical and
+                geological museum. Of particular note is the cross section of a 600 year old tree. If you have time one
+                can count the tree rings. There is a collection of butterflies, fossils, bugs that children will enjoy
+                looking at with some touching allowed. Like many museums in Korea there is no admission as learning
+                about Korea’s nature and history should be open to everyone it is felt. Koreans take pride in their
+                culture and history and enjoying sharing it with others. Do keep in mind if you would like to visit this
+                museum that in Korea most museums are closed on Mondays. This allows people to visit on weekends when
+                most people have time.
+            </p>
+        </div>
+
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Korean Food</h2>
+            <div class="img_container right">
+                <img src="images/mountains/ManInSan/food_seller.JPG">
+            </div>
+            <p>
+                The nearby restaurant had a long line waiting for the famous and delicious but sweet hotteok (호덕) that
+                is sold here. Not for those on a diet but after a good hike you’ve earned a treat! There were also many
+                people warming up around fire pits filled with burning logs. We drove a short distance down the road
+                then turned left up a steep road to the restaurant, heated with wood, containing a Hanok (한옥) style
+                Korean folk museum and many mud walled buildings. From here the drive to KAIST was about one and a half
+                hours drive back home.
+            </p>
+        </div>
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
