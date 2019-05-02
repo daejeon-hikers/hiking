@@ -303,6 +303,7 @@ will need javascript as also needs to display the hover effect when in side the 
 .demo button:hover {
     opacity: .5;
 }
+
 #section02 button {
     padding-top: 60px;
 }

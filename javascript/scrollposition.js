@@ -68,7 +68,7 @@ function scrollFunction(dropDownOpened) {
             //removes scroll button when scrolling down
             if (scrollPer > 0) {
                 document.getElementById("section02").style.display = "none";
-            }   else {
+            } else {
                 document.getElementById("section02").style.display = "inline-block";
             }
 
@@ -77,5 +77,6 @@ function scrollFunction(dropDownOpened) {
 }
 // allows the scroll button to work
 function scrollDown() {
+    //scrolls so that top of conent is at bottome of nav + 1 px so that the shadow appears
     scrollTo(0, (window.innerHeight + 1 - document.getElementById("mySidenav").offsetHeight));
 }
