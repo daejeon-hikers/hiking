@@ -42,11 +42,6 @@
             <a href="DeoGyuSan.html">DeoGyuSan
             </a><a href="OuSeongEeSan.html">OuSeongEeSan
             </a><a href="ManInSan.html">ManInSan
-            </a><a href="books.html">Mountain 4
-            </a><br><a href="books.html">Mountain 5
-            </a><a href="books.html">Mountain 6
-            </a><a href="books.html">Mountain 7
-            </a><a href="books.html">Mountain 8
             </a>
         </div>
         <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
@@ -54,11 +49,6 @@
             <a href="NakDong.html">NakDong
             </a><a href="YeongSang.html">YeongSang
             </a><a href="Kum.html">Kum river
-            </a><a href="books.html">River 4
-            </a><br><a href="books.html">River 5
-            </a><a href="books.html">River 6
-            </a><a href="books.html">River 7
-            </a><a href="books.html">River 8
             </a>
         </div>
     </div>

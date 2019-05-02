@@ -283,6 +283,7 @@ will need javascript as also needs to display the hover effect when in side the 
     background-blend-mode: multiply;
 }
 
+/* styling of the scroll down button */
 .demo button {
     position: fixed;
     bottom: 20px;
@@ -300,14 +301,15 @@ will need javascript as also needs to display the hover effect when in side the 
     border: none;
 }
 
+/* hover effect on the button */
 .demo button:hover {
     opacity: .5;
 }
-
+/* to give spacing on top of button */
 #section02 button {
     padding-top: 60px;
 }
-
+/* styling of the cirlce in the button */
 #section02 button span {
     position: absolute;
     top: 0;
@@ -319,7 +321,7 @@ will need javascript as also needs to display the hover effect when in side the 
     border-radius: 100%;
     box-sizing: border-box;
 }
-
+/* styoing of the down arrow in the button */
 #section02 button span::after {
     position: absolute;
     top: 50%;
