@@ -41,10 +41,14 @@
 .parallax.ManInSan2 {
     background-image: url("images/mountains/ManInSan/landscape_parallax.JPG")
 }
+
 .parallax.GyerYongSan1 {
     background-image: url("images/mountains/GyerYongSan/parallax_view.jpg")
 }
 
+.parallax.GyerYongSan2 {
+    background-image: url("images/mountains/GyerYongSan/parallax_flower.jpg")
+}
 
 /* canoe */
 .parallax.canoe {
@@ -70,12 +74,15 @@
 .parallax.YeongSang3 {
     background-image: url("images/canoeing/YeongSang/flowers_parallax.JPG")
 }
+
 .parallax.Kum1 {
     background-image: url("images/canoeing/Kum/parallax.JPG")
 }
+
 .parallax.Kum2 {
     background-image: url("images/canoeing/Kum/sunset_parallax.JPG")
 }
+
 .parallax.Kum3 {
     background-image: url("images/canoeing/Kum/expo_parallax.JPG")
 }
