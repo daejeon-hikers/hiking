@@ -4,7 +4,7 @@
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>Daejeon Hikers - Mountains: DeoGyuSan</title>
+    <title>Daejeon Hikers - BoMunSan</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="parallax_images.css" rel="stylesheet" type="text/css">
     <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
@@ -22,7 +22,7 @@
         <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
         <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
         <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
-        <a href="index.html" class="nav_logo">Daejeon Hikers</a>
+        <div class="nav_logo">Daejeon Hikers</div>
     </div>
     <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
     <div id="mySidenav" class="nav_bar">
@@ -55,80 +55,37 @@
 
     <!-- Add all page content inside this div -->
     <div id="main" class="main">
-        <div class="parallax DeoGyuSan1 full" id="parallax">
-            <!-- down arrow for the scroll down -->
-            <div id="section02" class="demo">
-                <button onclick="scrollDown()"><span></span>Scroll</button>
-            </div>
-        </div>
 
+        <!-- full screen parallax image  -->
+        <div class="parallax home1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
         <div class="content">
-            <h1>DeoGyuSan 덕유산 (Hike of 8 January 2012) </h1>
+            <h2>title</h2>
             <div class="img_container left">
-                <img alt="image of a map of DeoGyuSan" src="images/mountains/DeoGyuSan/map.jpg">
+                <img src="images">
             </div>
             <p>
-                This mountain contains the fourth highest peak in South Korea, Hangjeokbong (항적봉) at 1611 meters which
-                is equivalent to about 5000 feet. It is a Korean National Park so there are very strict rules concerning
-                the hiking on this mountain. On January 8th 2012 we met at KAIST at 8:30 and proceeded to the MuJu (무주)
-                parking area. We started hiking at 10:00 as it takes at least an hour to get there from Daejeon. I was
-                surprised at the number of hiking groups in the parking lot as well as the number of buses hired to
-                transport them. Our final destination today was Jungbong Peak at 1594 m. It would be a cold hike but as
-                you climb you quickly become warm. It was well worth the hike for the specular view.
-            </p>
-        </div>
-        <div class="parallax small DeoGyuSan2">
-            <div class="parallax_h1_contianer">
-                <h1>Ski resort facilities near the top</h1>
-            </div>
-        </div>
-        <div class="content">
-            <div class="img_container right">
-                <img alt="an image of a group of hiker on DeoGyuSan" src="images/mountains/DeoGyuSan/hikers.JPG">
-            </div>
-            <p>
-                The first part of the trail was easy and we took one and a half hours to get to the Buddhist temple,
-                PaekReonSa (백련사), arriving around 12:00. The last portion of the hike was more difficult with many steep
-                pitches including a number of stairs. We arrived at the summit at 2:15. There were excellent views at
-                the summit and in the winter one can watch the skiers leaving for the slopes that reach down to the
-                parking lot. One really needs poles and crampons (eisen) when climbing the mountain in the winter as the
-                trail is slippery in some areas and steep towards the summit. Also the number of climbers blocking the
-                trail added to the difficulty of the hike.
-            </p>
-        </div>
-        <div class="content">
-            <h2>Temple in the mountains</h2>
-            <div class="img_container left">
-                <img alt="a temple within the mountain of DeoGyuSan" src="images/mountains/DeoGyuSan/temple.JPG">
-            </div>
-            <p>
-                This pictures shows the lovely view looking down into the Buddhist temple covered in snow. On this day
-                we took the cable car down to the bottom which cost 8000won or 5600 won for senior citizen hikers.
-                Because the line for the cable car was so long, we ended up taking a taxi around the base of the
-                mountain back to the parking lot. We left the parking area at 3:15 p.m. arriving at the Daejeon world
-                cup stadium at 4:25 p.m. and then it took another fifteen minutes to KAIST parking area. The elevation
-                change from the parking lot is substantial and I am sure that this is one of the reasons this mountain
-                was chosen for one of the major ski areas of South Korea, the MuJu (무주) Ski Area.
-            </p>
-        </div>
-        <div class="content">
-            <p>
-                In summary it was a tough hike especially the last portion below the summit. It was made additionally
-                difficult because of all the hikers on the trail to the summit as well as cold temperatures and winter
-                conditions although this didn’t deter the many hikers from reaching the summit, it rather added to the
-                sense of accomplishment!
+
             </p>
         </div>
         <footer>
 
             <div class="footer-right">
-                <a class="icon-10 facebook" href="#" title="Facebook">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
                     <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
                             <path
                                 d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
                             </path>
-                        </svg></div>
+                        </svg>
+                    </div>
                 </a>
+                <!-- darkmode switch -->
                 <div class="switch_container">
                     <button class="switch" id="darkBtn" onclick="applyDarkmode()">
                         <i class="rail">
@@ -137,17 +94,15 @@
                     </button>
                     <div class="title">Dark Mode</div>
                 </div>
-
             </div>
-
+            <!-- links in the footer -->
             <div class="footer-left">
-
                 <p class="footer-links">
                     <a href="index.html">Home</a>
                     ·
                     <a href="mountains.html">Mountians</a>
                     ·
-                    <a href="canoe.html">Canoeing</a>
+                    <a href="canoeing.html">Canoeing</a>
                     ·
                     <a href="about_us.html">About Us</a>
                 </p>
