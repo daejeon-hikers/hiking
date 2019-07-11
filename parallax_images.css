@@ -57,6 +57,15 @@
 .parallax.GyerYongSan4 {
     background-image: url("images/mountains/GyerYongSan/parallax_view2.jpg")
 }
+.parallax.GyerYongSan5 {
+    background-image: url("images/mountains/GyerYongSan/parallax_tree.jpg")
+}
+.parallax.GyerYongSan6 {
+    background-image: url("images/mountains/GyerYongSan/ugly_boy.jpg")
+}
+
+
+
 
 /* canoe */
 .parallax.canoe {
