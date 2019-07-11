@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax GyerYongSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h1>Introduction to the GyerYongSan (계룡산) Mountain Range</h1>
+            <div class="img_container left">
+                <img src="images/mountains/GyerYongSan/temple.jpg">
+            </div>
+            <p>
+                This is one of the truly great mountain ranges of Korea so it is no surprise that it has achieved
+                National Park status. There are many peaks spread across Gyeryongsan National Park (계룡산국립공원) . Its name
+                (계룡) is derived from the view of the peaks that resembles a dragon with a rooster’s crown in the words
+                gye 계 (rooster) and yong 용 (Dragon). It was designated as Korea’s 2nd national park, after JiRiSan (지리산)
+                further south, in December 1968. Bounded by four cities including Daejeon, GongJu (공주), Gyeryong (계룡)and
+                NonSan (논산) means it is accessible easily by public transportation in the case you wish to go up one
+                side and down the other. Famous for the beautiful view points from the peaks, which can be verified by
+                the reviews found on trip advisor, it is also the location of three famous temples, DongHakSa (동학사),
+                GapSa(갑사), and SinWonSa(신원사) which are all located within the bounds of the national park. An abundance
+                of natural resources including 3,619 animal and plant species with 11 endangered animal species
+                underscores the vital importance of preserving the mountain / valley ecosystem in a small but densely
+                populated country like South Korea. Within the Buddhist temples there are also a number of national
+                treasures associated with the Buddhist culture that are well worth viewing when you come to climb in the
+                mountains. Be aware this designation as a national park means that you cannot bring a pet, like a dog,
+                into the park and there will be a small fee to enter the park.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Which peak is highest?</h2>
+            <div class="img_container right">
+                <img src="images/mountains/GyerYongSan/map.jpg">
+            </div>
+            <p>
+                The park consists of seven valleys and twenty eight peaks with the highest within the park being
+                CheonHwangBong (천황봉) at 845 meters in height. This means that it is far from being one of the higher
+                mountain ranges of Korea such as JiRiSan (지리산) and the TaeBeckSan (태백산) which are substantially higher,
+                but it makes up for this lack of height by having some of the most famous mountain views and nature
+                panoramas in Korea. Although CheonHwangBong (천황봉) measures as the highest peak in the National Park that
+                can be visited there is some controversy of the exact height of the mountain summit itself , GyeryongSan
+                (계룡산), which is shown as 846.4 meters height on naver maps (the Korean version of Google maps). This
+                mountain, outside the national park itself, is not open to the public as it is located in a military
+                restricted area which has been used for training soldiers.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Range of hikes</h2>
+            <div class="img_container left">
+                <img src="images/mountains/GyerYongSan/map2.jpg">
+            </div>
+            <p>
+                I have included a few of the many hikes that can be done in this mountain range. They cover the
+                different portions of the range and when you have completed all of them you will have a very good
+                understanding of why this is such a popular mountain range with hikers from across the nation. Meanwhile
+                there are other trails that you can hike and enjoy what this mountain range has to offer hikers. Look at
+                the maps included in the photo section for other hiking options. If you come on a weekend the easy
+                pathways around the temples will be filled with families and other visitors’ just out for a stroll or
+                having a picnic by the river soaking the summer rays, admiring delicate cherry blossoms or aweing at the
+                collage of nature’s finest autumn colors but not intent on climbing mountains.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>GyerYongSan 1 (5 February 2012) NamMaetap (남매탑)</h2>
+            <div class="img_container right">
+                <img src="images/mountains/GyerYongSan/entrance.jpg">
+            </div>
+            <p>
+                We met at KAIST and drove to the main entrance of this park which is a 20 minute drive from the KAIST
+                parking lot. The parking fee for the massive parking lot is 4000 won. Then we walked up the road between
+                the shops and food establishments to examine a giant-sized map of GyerYongSan national park (계룡산국립공원)
+                located opposite the far end of the parking lot. You needn’t worry about getting lost as it is a busy
+                route and there are many signs along the way. As a major entrance to the national park you will find
+                many amenities located here as well as the Cheonjeong Information center (천정탑방지원센터), the National park
+                office and a designated in-season camping ground.
+
+                Sanwonam (상원암)
+
+                After reviewing the hiking trail on the map, we walked along the path by a stream eventually turning
+                right up the hill and climbed at a moderate grade. The well-known women’s temple of Donghaksa (동학사)
+                mentioned in the introduction above is located just beyond the point where it is necessary to turn right
+                to reach NamMaetap (남매탑). Once on the path we followed the well-placed signs for SambulBong (삼불봉) peak
+                which is 775 meters high. Eventually after a rather steep trail of rubble we reached the saddle between
+                two peaks. You know that you are near this saddle when you come to the stairs. At the saddle you bear
+                left on a moderate climb up to NamMaeTap (남매탑) where there are two Buddhist stupas located on a flat
+                area together with a small Buddhist temple known as Sanwonam (상원암). Look for the plaque explaining the
+                story of the two stupa at this historic location. Seeing as how there were many picnic tables at
+                Sanwonam, it was a convenient place to eat lunch which we did at 1 p.m. Normally, the view here is
+                partially obstructed by the trees but during winter with no leaves on the trees you get a better
+                perspective of the various mountains peaks around you.
+
+            </p>
+        </div>
+
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

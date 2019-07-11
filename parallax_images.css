@@ -1,3 +1,4 @@
+/* home */
 .parallax.home1 {
     background-image: url("images/parallax_bomon.jpg");
 }
@@ -15,6 +16,8 @@
 }
 
 
+
+/* mountains */
 .parallax.mountains1 {
     background-image: url("images/parallax_bomon2.jpg");
 }
@@ -38,7 +41,12 @@
 .parallax.ManInSan2 {
     background-image: url("images/mountains/ManInSan/landscape_parallax.JPG")
 }
+.parallax.GyerYongSan1 {
+    background-image: url("images/mountains/GyerYongSan/parallax_view.jpg")
+}
 
+
+/* canoe */
 .parallax.canoe {
     background-image: url("images/canoe_parallax.JPG")
 }
@@ -71,6 +79,9 @@
 .parallax.Kum3 {
     background-image: url("images/canoeing/Kum/expo_parallax.JPG")
 }
+
+
+
 .parallax.about_us1 {
     background-image: url("images/parallax_group.jpg");
 }
