@@ -79,6 +79,12 @@
 .parallax.NakDong2 {
     background-image: url("images/canoeing/NakDong/island_parallax.JPG")
 }
+.parallax.NakDong3 {
+    background-image: url("images/canoeing/NakDong/parallax_field.jpg")
+}
+.parallax.NakDong4 {
+    background-image: url("images/canoeing/NakDong/parallax_river.jpg")
+}
 
 .parallax.YeongSang1 {
     background-image: url("images/canoeing/YeongSang/parallax.JPG")
