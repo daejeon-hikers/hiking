@@ -57,13 +57,22 @@
 .parallax.GyerYongSan4 {
     background-image: url("images/mountains/GyerYongSan/parallax_view2.jpg")
 }
+
 .parallax.GyerYongSan5 {
     background-image: url("images/mountains/GyerYongSan/parallax_tree.jpg")
 }
+
 .parallax.GyerYongSan6 {
     background-image: url("images/mountains/GyerYongSan/ugly_boy.jpg")
 }
 
+.parallax.BoMunSan1 {
+    background-image: url("images/mountains/BoMunSan/parallax.jpg")
+}
+
+.parallax.BoMunSan2 {
+    background-image: url("images/mountains/BoMunSan//parallax_sunrise.jpg")
+}
 
 
 
@@ -79,9 +88,11 @@
 .parallax.NakDong2 {
     background-image: url("images/canoeing/NakDong/island_parallax.JPG")
 }
+
 .parallax.NakDong3 {
     background-image: url("images/canoeing/NakDong/parallax_field.jpg")
 }
+
 .parallax.NakDong4 {
     background-image: url("images/canoeing/NakDong/parallax_river.jpg")
 }
