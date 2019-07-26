@@ -74,6 +74,18 @@
     background-image: url("images/mountains/BoMunSan//parallax_sunrise.jpg")
 }
 
+.parallax.KaJeongSan1 {
+    background-image: url("images/mountains/KaJeongSan/parallax.jpg")
+}
+
+.parallax.KaJeongSan2 {
+    background-image: url("images/mountains/KaJeongSan/group.jpg")
+}
+
+.parallax.KaJeongSan3 {
+    background-image: url("images/mountains/KaJeongSan/view_parallax.jpg")
+}
+
 
 
 /* canoe */

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax KaJeongSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h1>A bitterly cold hike</h1>
+            <div class="img_container left">
+                <img src="images/mountains/KaJeongSan/BW_temple.jpg">
+            </div>
+            <p>
+                This hike was a particularly long hike that covered three mountains in the order as listed in the title.
+                None of the mountains were of any sizeable height but despite the sunny, clear day it was bitterly cold
+                at – 6 degrees C with a relentless wind that ensured you kept moving. We left the KAIST parking area on
+                schedule at 10:10 a.m. drove north and arrived at the parking area of Daejeon Reservoir Dam at 10:59. As
+                mentioned in the descriptions of hikes of YoungSeongSan (양성산) and Cheongnamdae president trails (청남대
+                대통령길), this area is noted for its spectacular scenery due to the man-made Daejeon Reservoir Dam which
+                created lakes out of rivers.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Model Cultural village</h2>
+            <div class="img_container right">
+                <img src="images/mountains/KaJeongSan/gate.jpg">
+            </div>
+            <p>
+                This also serves as the parking area for the model cultural village called 문의문화재단지 which is located in
+                the actual present village of 문의 Munui. If you have time this recreated village is well worth time for a
+                stroll through. Most of the buildings were saved prior to the construction of the dam and were chosen
+                for their history, fine construction and variety. The photo shows the gate at the entrance to the
+                village. One has the feeling that you are in a rural village of Korea one hundred years ago. The scale
+                is much smaller than other traditional style villages such as Andong (안동) or Suwon (수원) but the
+                buildings are authentic and less touristic. There are also artisans that you can watch making a variety
+                of items. I especially remember the blacksmith who was making garden implements and shovels which as I
+                remember were also for sale.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Pavilion</h2>
+            <div class="img_container left">
+                <img src="images/mountains/KaJeongSan/pavilion.jpg">
+            </div>
+            <p>
+                We walked up the road a little and reviewed our plan of the hike on the large map at the beginning of
+                the
+                trail. We then turned left up a really steep trail that led to the ridge and eventually to our first of
+                three peaks, KaJeungSan which has a large pavilion shown in the included picture, arriving there at
+                noon. At the pavilion there was a vendor selling hard boiled eggs and heated ramyeon (라면) soup. Alas it
+                was cold and windy so we briefly absorbed the scenery and kept moving. Once we were down the ridge a
+                little further we found a sheltered spot to stop and eat our lunch before continuing.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small KaJeongSan2">
+            <div class="parallax_h1_contianer">
+                <h1>JakDuSan peak (작두산)</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>A comforting hot drink</h2>
+            <div class="img_container right">
+                <img src="images/mountains/KaJeongSan/rock_towers.jpg">
+            </div>
+            <p>
+                Before long we continued along the ridge towards JakDuSan 430 meters (작두산) where there was a fellow
+                providing hot coffee. After indulging in a hot drink for a short moment we quickly moved on to the next
+                peak arriving at 13:15 p.m. Since there was still one more peak to conquer before heading home we turned
+                and continued our journey towards the last peak of the day which was YoungSeongSan 300.6 meters (양성산)
+                where there were the remains of a fortress (Seong, 성), dating back to 474 AD. For more detailed
+                information about this fortress please refer to a “Fortress on the summit” which is found under the
+                YoungseongSan (양성산) mountain description on this website. We made it to our final peak at 15:37 p.m.,
+                just over 2 hours from the previous peak giving you an idea of the rough nature of the rocky ridge.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>The final stretch</h2>
+            <div class="img_container left">
+                <img src="images/mountains/KaJeongSan/log.jpg">
+            </div>
+            <p>
+                From YoungseongSan (양성산) we veered ourselves down a path positioned in a deep valley with steep hills on
+                either side. As we approached the path to the city we turned right scrambling up to the ridge where a
+                vendor who spent his day hoping for customers was selling food and warm drinks. Finally, we plodded down
+                to the hill to the parking lot arriving at 4:00 p.m. marking the end of a tiresome, bone-chilling but
+                rewarding day.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small KaJeongSan3">
+            <div class="parallax_h1_contianer">
+                <h1>Summary of Hike</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <div class="img_container right">
+                <img src="images/mountains/KaJeongSan/temple2.jpg">
+            </div>
+            <p>
+                This was a long arduous hike beginning with a rather steep trail up, continuing over the mountain to a
+                craggy but scenic rocky ridge that was hard to climb along because it the terrain was jagged boulders.
+                Then we went down a steep trail and up another steep trail to the next mountain. This was a rigorous
+                hike not because of the height of the mountains but because of the ups and downs on a very clear day yet
+                cold and windy day. Daejeon hikers also explored these same mountains in both April and August of 2009.
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
