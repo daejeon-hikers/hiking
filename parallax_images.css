@@ -86,6 +86,17 @@
     background-image: url("images/mountains/KaJeongSan/view_parallax.jpg")
 }
 
+.parallax.GapHaSan1 {
+    background-image: url("images/mountains/GapHaSan/parallax.jpg")
+}
+
+.parallax.GapHaSan2 {
+    background-image: url("images/mountains/GapHaSan/parallax2.jpg")
+}
+.parallax.GapHaSan3 {
+    background-image: url("images/mountains/GapHaSan/resting.jpg")
+}
+
 
 
 /* canoe */
