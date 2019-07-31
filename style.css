@@ -483,6 +483,9 @@ i.knob {
 
 /*dark mode webstyle change*/
 /* backfound colour of the page */
+body.dark ~ html {
+    background-color: #111;
+}
 body.dark,
 .dark .main {
     background-color: #111
