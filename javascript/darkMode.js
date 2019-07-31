@@ -45,10 +45,12 @@
  //function run in order to apply darkmode
  function enableDarkmode() {
      document.body.classList.add("dark");
+     document.documentElement.backgroundColor = "#111";
  }
  //function fun in order to disable darkmode
  function disableDarkmode() {
      document.body.classList.remove("dark");
+     document.documentElement.backgroundColor = '#f5f5f5';
  }
  //function in order to read the value of a cookie
  function getCookie(cname) {
