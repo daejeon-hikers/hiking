@@ -93,11 +93,26 @@
 .parallax.GapHaSan2 {
     background-image: url("images/mountains/GapHaSan/parallax2.jpg")
 }
+
 .parallax.GapHaSan3 {
     background-image: url("images/mountains/GapHaSan/resting.jpg")
 }
 
+.parallax.CheongNamDae1 {
+    background-image: url("images/mountains/CheongNamDae/parallax.jpg")
+}
 
+.parallax.CheongNamDae2 {
+    background-image: url("images/mountains/CheongNamDae/lake.jpg")
+}
+
+.parallax.GuBongSan1 {
+    background-image: url("images/mountains/GuBongSan/parallax.jpg")
+}
+
+.parallax.GuBongSan2 {
+    background-image: url("images/mountains/GuBongSan/stairs.jpg")
+}
 
 /* canoe */
 .parallax.canoe {

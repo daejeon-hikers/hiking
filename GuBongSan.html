@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax GuBongSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>World Global Eco Location</h2>
+            <div class="img_container left">
+                <img src="images/mountains/GuBongSan/group.jpg">
+            </div>
+            <p>
+                This mountain is a considered a World Global Eco location. The surrounding area has several deep valleys
+                tucked within a cloister of mountains, well worth the hour drive south from Daejeon that it takes to
+                arrive at the parking lot in front of the mountain. It is a popular weekend hiking spot, locally renown
+                among Korean hiking clubs, many of whom travel here as groups by bus. Maybe this is because of this
+                mountain area’s status as an ecological park, a view of a series of nearby mountains on a clear day and
+                the famous suspension bridge, a technical marvel in the wild built in 2015 which I will explain about in
+                more detail later, high up on the mountain between two peaks.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Series of peaks</h2>
+            <div class="img_container right">
+                <img src="images/mountains/GuBongSan/bridge.jpg">
+            </div>
+            <p>
+                The trail begins to the rear of the large parking lot. There are signs that provide visitors with easy
+                to understand layout of the hiking trail, additionally as you proceed you will find the trail is well
+                marked. The trail starts on a road that leads up beside a reservoir. Soon the road is left behind and
+                the trail becomes steeper up through the woods. As one approaches the area where the peaks are located,
+                there are a set of stairs that lead up to the first of the two summits. These stairs which are shown in
+                the pictures cling to the steep mountain face. At the top of the stairs there is a flat area that leads
+                to the first of the gazebos which provide excellent views of the surrounding valleys from this location.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Up and down</h2>
+            <div class="img_container left">
+                <img src="images/mountains/GuBongSan/valley.jpg">
+            </div>
+            <p>
+                Our destination was 구봉산 GuBongSan which is actually peak number 9 in a series of peaks. Before you can
+                reach this peak of 1002 meters you need to pass over 8 smaller consecutive peaks which are marked on the
+                map as 1봉 to 8 봉 with 봉 meaning peak, 산 meaning mountain and 구 pronounced “gu” means 9 therefore 구봉산
+                means 9 mountains peaks. As you reach each separate peak you will find stone marker with the peak number
+                and elevation. Therefore this hike consists of a series of several ups and downs as opposed to the usual
+                straight up and directly back down.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Extraordinary suspension bridge</h2>
+            <div class="img_container right">
+                <img src="images/mountains/GuBongSan/bridge2.jpg">
+            </div>
+            <p>
+                I cannot imagine how difficult it must have been to build this extraordinary suspension bridge. When on
+                the bridge look down (unless you have a fear of heights) and you will realize why it was built. There is
+                a very deep valley between the two peaks! Also the views from here are excellent as you can well imagine
+                but be careful not to drop your camera as it would be irretrievable. Walk across this 100 meter long
+                bridge, which actually connects 4 봉 and 5 봉 and on the other side you will discover fine places where
+                comfortable picnic spots await your arrival. The bridge is called 구름다리 which translates to “cloud
+                bridge”. Next to the bridge is a sign giving some interesting and useful information about the bridge
+                although it is in Korean only. Most of the foreigners you will come across hiking in Korean generally
+                tend to be living in Korea and not visitors. But most of the sign just is common sense tips such as no
+                running or mischievous behavior, take care of children and seniors, no throwing litter over the bridge
+                and a max. load of 150 people at a time. It is a quite sturdy bridge with a 지상고 (which translates to
+                ground clearance) of 47 meters and 해발고 (which translates to elevation) of 740 meters.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small GuBongSan2">
+            <div class="parallax_h1_contianer">
+                <h1>Steep Down</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Back to the parking lot</h2>
+            <div class="img_container left">
+                <img src="images/mountains/GuBongSan/river.jpg">
+            </div>
+            <p>
+                views all over again. This is an interesting mountain to hike both because of the exceptional views and
+                the suspension bridge which is the most impressive one in Korea, even more so than the one at Daedunsan
+                (대둔산) in my opinion. The only negatives on this hike are its distance from Daejeon, the closest major
+                city being Jeonju (전주) and as well on the weekends it can become very crowded. At the same time, there
+                is ample parking due to its popularity which is a problem at some of the other hiking areas. It is a
+                difficult location to get to without a car due to its distance from any major center.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Lost keys!</h2>
+            <div class="img_container right">
+                <img src="images/mountains/GuBongSan/car.jpg">
+            </div>
+            <p>
+                As an aside, I lost the keys to my car on this hike. On the way down I slipped and ripped my pocket.
+                Unfortunately the keys to my car were in that pocket and they must have fallen out. When we arrived at
+                the car I realized this. It was fortunate that ten years before I had placed a spare key under the car,
+                just in case the key became lost. I slid under the car and finally after looking for a while, I found it
+                slid up between the muffler heat shield and the car. It was good that I had done this as otherwise we
+                would have been really stuck. I went back the following Thursday and looked for the keys on the trail
+                but never found them. I still wonder where they ended up.
+            </p>
+        </div>
+
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')"
+                onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
+            onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')"
+            onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax CheongNamDae1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h1>Presidential retreat</h1>
+            <div class="img_container left">
+                <img src="images/mountains/CheongNamDae/retreat.jpg">
+            </div>
+            <p>
+                This presidential retreat was opened in 1983 for the exclusive use of the president, top government
+                officials and their families as a retreat and 2nd home. Although in a remote location, it is not a far
+                drive from Daejeon on Korea’s modern, fast highways and well worth a visit. It is considered one of the
+                most beautiful locations in the province situated on the shores of lake Daecheongho (대청호). Our hiking
+                group has visited this property numerous times and we have always enjoyed the numerous hiking trails
+                around each of the peninsulas as well as the hiking trails into the pine forest in the upper reaches of
+                the property. While there I would highly recommend taking the opportunity to visit the former luxurious
+                retreat ”home away from home” of the presidents while away from the Blue house of Seoul from 1983 to
+                2003. You are required to remove your shoes and wear special slippers when entering the presidential
+                home. Much of the furniture used still remains giving the place an authentic lived- in feel so you can
+                imagine from the surroundings how the president’s family lived and entertained important political
+                figures here.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Fish farm with fountains</h2>
+            <div class="img_container right">
+                <img src="images/mountains/CheongNamDae/statue.jpg">
+            </div>
+            <p>
+                The trails are very well marked and maintained. As the retreat was developed during a time of great
+                peril for the president of the republic there is chance to observe how the property was protected from
+                attack by guard houses and barbed wire. Security was paramount at that time following unsuccessful
+                attacks on the Blue house in Seoul and after the October 6th, 1983 Rangoon, Burma bombing which was an
+                assignation attempt on President Chun Doo Hwan (전두환) by North Korean agents. Although he survived 21
+                others, mainly government officials were killed including 4 senior ministers. To discover more
+                fascinating and at times turbulent history of the years from 1983 to 2003 visit the onsite museum called
+                대통령 기념관 which translates to President’s Memorial place. Here you can learn some background information
+                on each of the presidents that used this retreat and see some memorabilia such as the presidential open
+                top black car. In front of the President’s Memorial place is a beautiful fishing pond covered in lily
+                pads called 양어장 (fishing farm) in Korean with water fountains making this a place worth stopping by for
+                a picture before heading to the trails. During the time of president Chun Doo Hwan (전두환) the fish farm
+                pond was made into an outdoor ice skating rink which the former president enjoyed using during winter
+                holidays.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small CheongNamDae2">
+            <div class="parallax_h1_contianer">
+                <h1>Fountains</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>When to visit</h2>
+            <div class="img_container left">
+                <img src="images/mountains/CheongNamDae/view.jpg">
+            </div>
+            <p>
+                I recommend this as an all day visit. There are no strenuous hikes in the area but many trails that pass
+                through the woods and along the lake. There are some steep trails but then there are numerous pavilions
+                well placed to take a rest in and also have lunch. There are many special weekends when social events
+                are planned including concerts in the amphitheater on the property. We have been there for one of these
+                and at that time there were many crowds and parking is difficult so one must wait for a shuttle bus to
+                enter the property. You can chose which to do although I personally prefer the weekends when there are
+                no activities planned as it is a time to really appreciate the serenity of this beautiful location. Keep
+                in mind as the area is run as a tourist attraction by the government like most museums it is closed on
+                Mondays. There is an admission fee of 5000 won for adults and 3000 won for children or seniors. During
+                the autumn when leaves change color this park is especially crowded with the combination of wooded hilly
+                trails and lakeside walks attracting families from across the country.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Which trail to follow?</h2>
+            <div class="img_container right">
+                <img src="images/mountains/CheongNamDae/map.jpg">
+            </div>
+            <p>
+                You will probably need more than one visit to cover all of the trails here although none are very long.
+                Each trail is named after a former president, some trails following the peninsula shore that hugs the
+                lake and others leading up into the lush pine forest in the hills above. The trails include 전두환 코스 (Chun
+                Doo Hwan course) 1.5 km, 김영삼 코스 (Kim Young Sam course) 1 km, 노무현 코스 (Roh Moo Hyun course) 1 km, 노태우 코스
+                (Roh Tae Woo course) 2 km, 이명벽 코스(Lee Myeon Byeok course) 3.1 km and 김대중 코스 (Kim Dae Joong course) 2.5
+                km. By way of taking the Kim Dae Joong (김대중) course you will come across a 3 story observatory well
+                worth the climb up for impressive views of surrounds and lake.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Staircase</h2>
+            <div class="img_container left">
+                <img src="images/mountains/CheongNamDae/stairs.jpg">
+            </div>
+            <p>
+                The huge staircase that forms the basis of the trail up the hill from the road to the observatory is
+                nicknamed the 행복의 계단 which translates to “The Happy stairs”. Indeed, you will be happy if you have
+                finally reached the top of the stairs! You will find a statue on each trail of the president whose
+                namesake is used for that particular trail. And being Korea you are never far away from free public
+                toilets while exploring the presidential trails.
+            </p>
+        </div>
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
