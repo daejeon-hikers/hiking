@@ -117,8 +117,16 @@
 .parallax.CheonTaeSan1 {
     background-image: url("images/mountains/CheonTaeSan/parallax.jpg")
 }
+
 .parallax.CheonTaeSan2 {
     background-image: url("images/mountains/CheonTaeSan/dolls.jpg")
+}
+
+.parallax.JilHyeonSan1 {
+    background-image: url("images/mountains/JilHyeonSan/parallax.jpg")
+}
+.parallax.JilHyeonSan2 {
+    background-image: url("images/mountains/JilHyeonSan/pond.jpg")
 }
 
 

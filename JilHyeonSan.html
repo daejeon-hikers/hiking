@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax JilHyeonSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>UamSaJeok Historic Park (우암사적공원)</h2>
+            <div class="img_container left">
+                <img src="images/mountains/JilHyeonSan/portrait.jpg">
+            </div>
+            <p>
+                This hike began at the UamSaJeok Historic Park (우암사적공원) located at 65 GaYang-dong, Dong-gu (가양동, 동구) on the eastern part of
+                Daejeon a short distance from the main bus terminal so very easy to get to. It is worth your time to visit this historic
+                park and look at the displays of cultural assets inside the exhibition hall before exploring the numerous hiking trails in
+                the surrounding hills. This park is a classic example of a Joseon (조선) Confucian School complex and monument to one of the
+                great Confucian scholars of the middle Joseon ( 조선) Period, patriotic (Uam) Song Si Yeol (우암 송시열) who lived from 1607 -
+                1689. Uam or 우암 was his pen name he used in his writings. From this place in the foothills of GaYang dong, he studied,
+                taught his students and worked on his plans to conquer the north. He became minister of general management under the reign
+                of King Injo (인조).
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Old bridge</h2>
+            <div class="img_container right">
+                <img src="images/mountains/JilHyeonSan/view.jpg">
+            </div>
+            <p>
+                The trail behind the park leads up into the hills behind the school property and crosses over the tunnel that leads to
+                OkCheon (옥천). Part of the trail follows along a fence line. On this hike we ended up at the location of the old bridge build
+                during the former president ParkChunHee (박전희) period and is typical of the bridges of reinforced concrete that were built
+                during this period. It has since been abandoned for the more easily maintained bridge of steel and concrete. It is a very
+                difficult type of bridge to classify for weight loads. I know this because I encountered them in Vietnam. For this reason
+                another steel construction bridge was built parallel to it, and a new tunnel was constructed and the reinforced concrete
+                bridge and tunnel were abandoned.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small JilHyeonSan2">
+            <div class="parallax_h1_contianer">
+                <h1>Autumn Romance</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Hiking trails</h2>
+            <div class="img_container left">
+                <img src="images/mountains/JilHyeonSan/group.jpg">
+            </div>
+            <p>
+                It is not a difficult or heavily used hiking trail and there are many fine views along the way. It is part of a large ring
+                of trails that encircle the city of Daejeon and you could easily continue on the trails to some of the other more visited
+                mountains. At the end of the hike one can either follow the trail back to the beginning or find a path way down the mountain
+                and take a bus that leads to the start of the hike. I recommend this hike for a short fall hike and an opportunity to see
+                the city of Daejeon from a different prospective. In the fall the leaves are proudly displaying their various colors as was
+                in the case when we hiked in November 2018 but in the spring the historical park below is alive with blooms. It is
+                interesting that for a portion of the hike, you are passing over the tunnel build in the 1970s that greatly shortened the
+                time to reach the city of Okcheon (옥천). On these trails you are never far from the bustle of the city and the sound of cars
+                not far below but the city citizens appreciate the closeness of nature for morning or evening walks.
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
