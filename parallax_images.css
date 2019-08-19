@@ -114,6 +114,15 @@
     background-image: url("images/mountains/GuBongSan/stairs.jpg")
 }
 
+.parallax.CheonTaeSan1 {
+    background-image: url("images/mountains/CheonTaeSan/parallax.jpg")
+}
+.parallax.CheonTaeSan2 {
+    background-image: url("images/mountains/CheonTaeSan/dolls.jpg")
+}
+
+
+
 /* canoe */
 .parallax.canoe {
     background-image: url("images/canoe_parallax.JPG")

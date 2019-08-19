@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax CheonTaeSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Which course to choose?</h2>
+            <div class="img_container left">
+                <img src="images/mountains/CheonTaeSan/group_map.jpg">
+            </div>
+            <p>
+                We met at KAIST at 10:00. It took about 45 minutes to arrive at the base of the mountain. I will describe the scenic route
+                from KAIST. Take Rt. 25 to 300E to the exit of Rt.35 south to exit for GumSan. Then take Rt.68 East to Rt.501 North to the
+                exit for YeongGukSa (영국사) temple. After parking we headed up the Ambyeok (암벽코스) course or A course, a 2.9 Km long hike with
+                a moderate grade and about half way up has a very steep pitch with ropes for assistance. There are 4 courses available
+                labelled as A-D. The map in the parking lot will tell you how long each course takes. We arrived at viewpoints at 12:48 p.m.
+                and ate lunch there. After lunch we hiked further and reached steep pitches at 14:00 p.m. and arrived at the top at 15:34
+                p.m. For the way down we travelled using the NamgoGaygil (남고개길) trail which is 3.9 Km long with viewpoints at 15:53 p.m. and
+                arrived at YeongGukSa (영국사) at 17:06 p.m. We left the parking lot soon after and arrived at KAIST at 18:00.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Climbing the rock face</h2>
+            <div class="img_container right">
+                <img src="images/mountains/CheonTaeSan/rock.jpg">
+            </div>
+            <p>
+                This was a very good hike with good views at along the trail. It also had a few steep pitches but there were ropes to assist
+                at these locations that made it very safe and fun in those areas. There is also a path that avoids the scramble up the rock
+                face using the ropes. This trail is to the right and is marked. You can choose which route to take. If you are nervous about
+                scrambling up a steep rock face, you can go around this and arrive at the same location as those who climb the rock face
+                (but it is not nearly as much fun). I have done both and enjoy the challenge of the ropes but then I have had extensive
+                experience with rock climbing. I even did this with our dog BB in my pack and our youngest hiker Pablo at 11 years old
+                relished the challenge as well. I recommend this hike for those who wish to go on a hike that is not too strenuous.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small CheonTaeSan2 ">
+            <div class="parallax_h1_contianer">
+                <h1>Buddhist Dolls</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Other attractions not to be missed </h2>
+            <div class="img_container left">
+                <img src="images/mountains/CheonTaeSan/pond.jpg">
+            </div>
+            <p>
+                There are several reasons to climb this mountain aside from the thrill of rock climbing and the magnificent view from the
+                top. Also worth visiting on the way to the top is the Yeongguksa (영국사) temple. There is a colorful outdoor display on a wall
+                of dozens of Buddhist dolls, as well as Korean treasure no. 533 which is a 3 storied stone Pagoda built during the Shilla
+                period in Korean history. From the parking lot it is only a 20 minute (1.1km) walk to reach the temple. On the way to the
+                temple you will not be able to miss the 은행나무 or in English the Ginkgo tree. This tree soars 31 meters high with an 11 meter
+                diameter and is said to be 1000 years old. Legend has it that during times of national crisis the tree wails for the people
+                of Korea. During our visit the only sound was the soft rustling of tree leaves so I guess all was well in the country of
+                Korea. Lastly, but certainly not to be missed, especially on a warm day are two waterfalls where our group posed for a cool
+                photo. The names of the waterfalls are 진주폭포 and 삼단폭포 which roughly translates to Jinjupokpo and Samdanpokpo, with pokpo
+                being the Korean word for “waterfall”.
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
