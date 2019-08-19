@@ -159,6 +159,22 @@
     background-image: url("images/canoeing/Kum/expo_parallax.JPG")
 }
 
+.parallax.Seomjin1 {
+    background-image: url("images/canoeing/Seomjin/parallax.jpg")
+}
+
+.parallax.Seomjin2 {
+    background-image: url("images/canoeing/Seomjin/dam_parallax.jpg")
+}
+
+.parallax.Seomjin3 {
+    background-image: url("images/canoeing/Seomjin/group.jpg")
+}
+
+.parallax.Seomjin4 {
+    background-image: url("images/canoeing/Seomjin/tent.jpg")
+}
+
 
 
 .parallax.about_us1 {
