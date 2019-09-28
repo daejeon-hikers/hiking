@@ -125,6 +125,7 @@
 .parallax.JilHyeonSan1 {
     background-image: url("images/mountains/JilHyeonSan/parallax.jpg")
 }
+
 .parallax.JilHyeonSan2 {
     background-image: url("images/mountains/JilHyeonSan/pond.jpg")
 }
@@ -191,6 +192,19 @@
 .parallax.Seomjin4 {
     background-image: url("images/canoeing/Seomjin/tent.jpg")
 }
+
+.parallax.ChungJu1 {
+    background-image: url("images/canoeing/ChungJu/parallax.jpg")
+}
+
+.parallax.ChungJu2 {
+    background-image: url("images/canoeing/ChungJu/flag.jpg")
+}
+
+.parallax.ChungJu3 {
+    background-image: url("images/canoeing/ChungJu/dam.jpg")
+}
+
 
 
 
