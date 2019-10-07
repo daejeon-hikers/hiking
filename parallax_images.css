@@ -130,6 +130,17 @@
     background-image: url("images/mountains/JilHyeonSan/pond.jpg")
 }
 
+.parallax.NaBalBong1 {
+    background-image: url("images/mountains/NaBalBong/parallax.jpg")
+}
+
+.parallax.NaBalBong2 {
+    background-image: url("images/mountains/NaBalBong/tree.jpg")
+}
+
+
+
+
 
 
 /* canoe */
@@ -224,6 +235,8 @@
 .parallax.DaeCheong5 {
     background-image: url("images/canoeing/DaeCheong/parallax3.jpg")
 }
+
+
 
 
 
