@@ -154,7 +154,13 @@
     background-image: url("images/mountains/SongNiSan/ice_dam.jpg")
 }
 
+.parallax.YoungSeongSan1 {
+    background-image: url("images/mountains/YoungSeongSan/parallax.jpg")
+}
 
+.parallax.YoungSeongSan2 {
+    background-image: url("images/mountains/YoungSeongSan/sign.jpg")
+}
 
 
 

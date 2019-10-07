@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax YoungSeongSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Incised Meander </h2>
+            <div class="img_container left">
+                <img src="images/mountains/YoungSeongSan/group.jpg">
+            </div>
+            <p>
+                From a geological perspective this is an interesting hike as once you reach the summit of the mountain you have an ideal
+                opportunity to view the reservoir for Daejeon (대청호) from a bird-eye view. This is an example of an incised meander.
+                Originally the land of Korea was flat and the streams flowed over it with the characteristic “S” shaped channels like those
+                found on the Mississippi River in the central southern area of the US. Then when the land started to rise slowly about 70
+                million years ago, the river maintained its original “S” shaped channel. This peak is one of the best vantage points for
+                viewing this feature of the Geum (금강) River. This is a classic location for a dam as the deep incised channel can store a
+                great deal of water. This lake was one of the many built during the former President Park Chun Hee’s (박정희) period with the
+                aim of modernizing Korea. One of the major problems in Korea is that it is only during the monsoon season of June, July and
+                August that there is abundant rainfall in Korea. In fact this is the time of year when ninety percent of the rain falls.
+                Therefore Korea used to have major problems with producing enough to feed the population.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Dams everywhere</h2>
+            <div class="img_container right">
+                <img src="images/mountains/YoungSeongSan/dams.jpg">
+            </div>
+            <p>
+                The Park Chun Hee (박정희) administration decided to solve this problem by building dams both large and small to alleviate this
+                problem. When you travel around Korea you will see the many lakes that were made during this SaeMaEul movement (사마을 운동 … a
+                political initiative launched to modernize the rural South Korean economy). I am not a great supporter of damming rivers but
+                in this case, it did solve a major problem and helped lead to the prosperity of the country which was a large contributing
+                factor in allowing Korea to rise from being one of Asia’s poorest countries after the Korean war in the 1950’s to one of the
+                richest. Today Korea’s economy ranks 11th largest in the world and 4th largest in Asia. Being able to feed its increasing
+                population was essential in achieving this spectacular feat considering the relatively small land size and large population.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small YoungSeongSan2">
+            <div class="parallax_h1_contianer">
+                <h1>To the summit</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Fortress on the summit</h2>
+            <div class="img_container left">
+                <img src="images/mountains/YoungSeongSan/forest.jpg">
+            </div>
+            <p>
+                This is not a difficult hike, the elevation reaches only 300.6 meters. The trail is obvious and there are many signs
+                indicating the direction the peak. The map included in the photo section of this write up shows the trail that we followed
+                on this hike on our 2010 hike. It is a popular mountain and in the fall there are many hikers so start early on your hike
+                during that season. Additionally for those brave enough to face the extreme heat of the summer, the trail to the summit is
+                mainly a shady tree forest path. Also noteworthy is the remains of a fortress called, 청주양성산성 built during the 3 kingdom
+                period in 474 by the Shilla (신라) Dynasty. To translate that name for you, 청주 is the name of the closest city, 양성산 the name
+                of the mountain and 성 meaning fortress. The fortress at one time surrounded the summit at a height of 292 meters. It is said
+                the famous monk 승려 화은 ( Monk Hwa Eun) lived here. At the base of the mountain is also a youth cultural center called the 청소년
+                수련원.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Guests on hike</h2>
+            <div class="img_container right">
+                <img src="images/mountains/YoungSeongSan/group2.jpg">
+            </div>
+            <p>
+                We were honored this hike as well to have Juli Sherer and Alan England along with George Suzuki. Juli is one of the founders
+                of the Daejeon Hikers and Alan England did an excellent job of leading the group after Juli returned to the US. George
+                Suzuki is also a great supporter of the group and has led many hikes. He is an avid hiker and has hiked Mt Fuji over 20
+                times. Although he has since moved back to Japan for his retirement, he returns a few times a year to Korea at which times
+                we always have a special hike for him to one of his favorite hiking places. During these hikes we have a large turnout of
+                hikers as many of his past students come on the hike to be with him again and chat about shared hiking experiences. Often
+                after these special hikes we have an enjoyable meal at a restaurant near to the mountain we had been hiking that day making
+                the day all the more special. The Daejeon hikers group repeated this hike in March of 2018 before any leaves had appeared on
+                the trees or plants had returned to life.
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
