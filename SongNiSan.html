@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax SongNiSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Trail to King’s placenta (태실) and SangHwan-Am (상환암) temple</h2>
+            <div class="img_container left">
+                <img src="images/mountains/SongNiSan/map.jpg">
+            </div>
+            <p>
+                This hike was primarily to visit King Sunjo’s (순졷ㅐ왕) placenta burial site and the mountainside temple of SangHwan-Am (상환암).
+                There is another hiking description on this website titled “Munjangdae (문장대) short hike Eastern route” in which we visited
+                this same national park, Songnisan National park (속리산국립공원), where we climbed to one of the peaks called Munjangdae (문장대). On
+                this particular hike we entered the National park at the main entrance in the Southwest corner near to the famous BeopJuSa
+                (법주사) temple. The included photographs on this description page really show the progress of this hike and the beauty of the
+                location on this side of the mountain. To include a mountain peak in this hike would have necessitated an extremely early
+                start which is not the norm for Daejeon hikers.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>BeopJuSa Temple (법주사)</h2>
+            <div class="img_container right">
+                <img src="images/mountains/SongNiSan/statue.jpg">
+            </div>
+            <p>
+                We met at KAIST and drove to the location parking lot which services those visiting the temple named BeopJuSa (법주사) renowned
+                for its 33 meter standing bronze Buddha weighing in at 160 tons completed in 1990. Underneath this giant Buddha is a small
+                museum of Buddhist related relics and objects to tour if you don’t mind removing your shoes and walking on a cold floor. If
+                you prefer more ancient relics than a giant Buddha statue, there is the giant iron cauldron once used to cook rice for
+                hundreds of monks (cast in 720 AD), a massive bell and the usual restored temples for worship and paying respects to Buddha.
+                The complex itself which dates back to 553 AD once must have held hundreds of monks but these days is rather overrun by
+                hundreds of tourists each day.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Placenta monument but no placenta?</h2>
+            <div class="img_container left">
+                <img src="images/mountains/SongNiSan/path.jpg">
+            </div>
+            <p>
+                After our mandatory temple visit we began the hike on an easy trail that skirted an artificial lake with a dam. There was a
+                convenient wooden walkway around the lake that eventually led up to the trail that goes up to the placenta monument. This
+                trail was a very steep one that climbed up through some scenic woods soon leading us to the monuments that used to contain
+                the placenta of the King Sunju (순조대왕). I say “ used to” because in 1927 the local Joseon governor – general had the placenta
+                jar containing the placenta remains sent to Seoul so in effect all that remains here today is the Stone Monument to mark
+                where the King’s placenta used to be buried.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small SongNiSan2">
+            <div class="parallax_h1_contianer">
+                <h1>Frozen beauty</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Symbol of Longevity</h2>
+            <div class="img_container right">
+                <img src="images/mountains/SongNiSan/rock_statue.jpg">
+            </div>
+            <p>
+                You may think burying a placenta an odd thing to do but the practice in old times was limited to Royalty, usually future
+                Kings. The placenta and umbilical cord would be placed in a placenta pot called the 태항아리 and buried in a chamber called the
+                태실. 태 (tae) comes from the word 탭반 which means placenta, 항아리 (hangari) is a traditional style pot while 실 (shil) means room
+                but in this meaning chamber. When King Sunjo (순조대왕). became the 23rd King during Joseon times he had the monument
+                magnificently decorated. Beside the circle shaped stone monument is a stone tortoise monument as well. The tortoise was a
+                symbol of longevity in both Korea and China and therefore was often used during burials. Alas, a long life was not in store
+                for King Sunjo (순조대왕) who had become king at only 10 years old and died at 44 after a somewhat turbulent reign as Korea’s
+                royalty strongly resisted interference from the outside modern world during the early part of the 19th Century.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Wrong way</h2>
+            <div class="img_container left">
+                <img src="images/mountains/SongNiSan/ice_fall.jpg">
+            </div>
+            <p>
+                After having lunch in this historical location we decided to venture a short cut over to the temple that we could see in the
+                distance at a height not too much above the height of the placenta monument we were currently at. Unfortunately that turned
+                out to be a mistake. We had discovered a trail leading up above the monument so we were encouraged that it would be possible
+                to do a short cut path to the Sanghwan-am (상환암) temple. We walked down to the saddle and then up a steep trail through the
+                woods until we came to a quite large rock. We explored our options to bypass this obstacle and our leader even climbed up
+                over a portion of the massive boulder but reported that beyond there was just a large cliff. At that we were forced to
+                abandon this route, went back to the saddle and down to the actual trail leading up to the mountain temple.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>SangHwan-Am temple (상환암)</h2>
+            <div class="img_container right">
+                <img src="images/mountains/SongNiSan/rock_wall.jpg">
+            </div>
+            <p>
+                This trail to SangHwan-Am (상환암) temple began at a moderate grade. Initially, there were steps of wood that lead up to the
+                temple that is precariously situated against the mountain rock. Later the steps were carved into the rock in places because
+                there was simply no room for wooden steps. SangHwan-Am (상환암) temple is less visited than the popular BeopJuSa(법주사) temple
+                (the latter being conveniently located near the park entrance) but an architectural wonder built as an extension to the
+                boulders on the mountainside which would not pass any safety standards in most Western countries. After our exploration we
+                returned to the path down the mountain that led to a road and then the temple complex where the car parking lot was located.
+                We arrived back at KAIST around 6:00 pm later than usual but it was a long drive.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Summary of hike</h2>
+            <div class="img_container left">
+                <img src="images/mountains/SongNiSan/forest.jpg">
+            </div>
+            <p>
+                This is an interesting hike with some wonderful views of the distant mountains. The SangHwa-Am (상환암) Temple site is well
+                worth visiting and also the placenta stone monument of King Sunjo (순조댕왕). Both are unique monuments exemplifying the rare
+                pristine beauty still available in rural Korea incorporated with its long proud history. The trail in places was steep up to
+                the placenta but the steep portions of the route up to SangHwa-Am (상환암) temple were on steps placed there to make the climb
+                much easier. I would recommend this as a fine day hike in the winter when there are fewer visitors to this popular mountain.
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
