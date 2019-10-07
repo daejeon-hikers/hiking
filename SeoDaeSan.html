@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax SeoDaeSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>SeoDaeSan (서대산) Hike (904m)</h2>
+            <div class="img_container left">
+                <img src="images/mountains/SeoDaeSan/map.jpg">
+            </div>
+            <p>
+                SeoDaeSan (서대산), located about one hour drive from Daejeon, is the tallest mountain in ChungCheongNamDo (충청남도) so don’t
+                expect an easy hike if your goal is to reach the summit at 904 meters high. When you arrive in the parking lot, carefully
+                examine the large map which shows 4 trails (in Korean 1 - 4 코스) from this position to the summit which is marked with a
+                yellow triangle and the word “정상” meaning summit. If you had taken a look at Naver maps before heading out for this hike you
+                might be confused at first glance of the giant billboard map of this side of SeoDaeSan (서대산) so let me explain. At the
+                bottom of the billboard map is a red dot with 현위치 which means present location and the yellow triangle signifying the summit
+                at the top of the map. So it looks as though you are heading north to the summit but in actual fact the parking lot is
+                located northwest of the summit therefore this is a view of the trails leading to the mountain from the northwest. A naver
+                map search will show you that there are additional trails to the mountain from the east, south and southwest directions.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Gaedeoksa temple (개덕사)</h2>
+            <div class="img_container right">
+                <img src="images/mountains/SeoDaeSan/temple.jpg">
+            </div>
+            <p>
+                We started at the Buddhist temple known as Gaedeoksa (개덕사) of which there is a photo next to this description. It is a
+                rather typical Buddhist temple with a unique feature. The Gaedeok (개덕폭포) waterfall offers a refreshing background drop to an
+                altar of worship and large metal / glass case full of burning candles. One hopes with the real threat of forest fires that
+                the case of candles is monitored closely. There are other temples to visit if you choose a different starting place or go
+                down another side of the mountain which is difficult to do if you’ve got a car in the parking lot on the opposite side of
+                the mountain. HengGukSa (흥극사) is located East of the mountain a 2 km walk from the summit and to the west of the summit is
+                SeoDaeSa (서대사) which dates from 851 AD. It is quite amazing that it is generally known when many of these ancient temples
+                were first established exactly but fortunately Buddhist Monks were educated and excellent record keepers. At that time, the
+                year of construction would have been noted not as 851 AD but according to the year of reign of the current king. For example
+                SeoDaeSa (서대사) was established during 13th year in the reign of King MunSeong (문성왕) of the late Shilla (신라) dynasty, a time
+                of strife, which corresponds to 851 AD.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>A giant white soccer ball</h2>
+            <div class="img_container left">
+                <img src="images/mountains/SeoDaeSan/ball.jpg">
+            </div>
+            <p>
+                With such a formidable climb ahead, it is imperative to not loiter too long at the Buddhist temples and proceed onwards.
+                There are some sights of interest on the way to the summit depending on the course (코스) you choose to take such as notable
+                rocks like 마담바위 and 용바위 (바위 meaning rock), 구름다리 meaning cloud bridge or 서대폭포, another waterfall. This day we went up course
+                3 and down course 2. We faced a steep trail that had no breaks, it was an up and up hike. We did take two minor breaks, one
+                at 12:10 p.m. and another at 1:00 p.m. As was to be expected, the last 0.3km was the most difficult and the steepest. I
+                remember it being particularly difficult in the winter especially when there is snow on the ground. We finally reached the
+                top at 1:30 p.m. Standing quite prominently on the top is a white, large radar tower which is shaped like a soccer ball.
+                There was a board platform at the base of the radar tower and this made a convenient place to eat. On a few hikes the
+                building was open and there was an interesting display on the walls that presented some information about the tower. The
+                stone plaque indicating the name and height of the summit was placed on a large pile of rather ominously piled boulders.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small SeoDaeSan2">
+            <div class="parallax_h1_contianer">
+                <h1>Winter scenery</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Heading back</h2>
+            <div class="img_container right">
+                <img src="images/mountains/SeoDaeSan/forest.jpg">
+            </div>
+            <p>
+                We started down the mountain at 2:15 p.m. Although the first portion of the trail is was steep with challenging places, you
+                can trust the Koreans to place ropes in the most difficult areas to assist with your descent. One portion of this trail was
+                particularly interesting as we actually passed through a deep cleft in the rocks. About 1 kilometer from the HeungGukSa
+                (흥국사) temple was a trail junction, then about two thirds of the way down way down the trail becomes very steep but you are
+                soon rewarded for your efforts with a splendid view of the rocky valley below. By 4:15 p.m. we had reached a spring where we
+                filled our empty canteens and by 4:30 p.m. we were walking to the parking lot where the car was located.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Summary of hike</h2>
+            <div class="img_container left">
+                <img src="images/mountains/SeoDaeSan/forest2.jpg">
+            </div>
+            <p>This is not a hike for the faint at heart, those with weak knees or without stamina to endure a day of physical exertion with
+                a few challenges. The trail is steep and in places very steep. There are ropes judicially placed in most of these more
+                difficult locations. If you are in good condition and have the whole day for the hike, it is well worth doing and you will
+                be able to proudly boast that you have hiked one of the higher mountains in central Korea. If you enjoyed this hike, there
+                are numerous ways to reach the summit with each one offering a unique perspective and its own scenic temptations.
+
+            </p>
+        </div>
+
+
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
