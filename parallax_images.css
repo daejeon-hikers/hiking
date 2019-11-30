@@ -162,6 +162,25 @@
     background-image: url("images/mountains/YoungSeongSan/sign.jpg")
 }
 
+.parallax.DaeDunSan1 {
+    background-image: url("images/mountains/DaeDunSan/parallax.jpg");
+}
+
+.parallax.DaeDunSan2 {
+    background-image: url("images/mountains/DaeDunSan/pagota.jpg");
+}
+
+.parallax.DaeDunSan3 {
+    background-image: url("images/mountains/DaeDunSan/parallax_view.jpg");
+}
+
+.parallax.DaeDunSan4 {
+    background-image: url("images/mountains/DaeDunSan/parallax_snow.jpg");
+}
+
+.parallax.DaeDunSan5 {
+    background-image: url("images/mountains/DaeDunSan/parallax_bridge.jpg");
+}
 
 
 /* canoe */
