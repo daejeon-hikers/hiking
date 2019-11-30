@@ -182,6 +182,13 @@
     background-image: url("images/mountains/DaeDunSan/parallax_bridge.jpg");
 }
 
+.parallax.MaEeSan1 {
+    background-image: url("images/mountains/MaEeSan/parallax.jpg");
+}
+.parallax.MaEeSan2 {
+    background-image: url("images/mountains/MaEeSan/parallax2.jpg");
+}
+
 
 /* canoe */
 .parallax.canoe {

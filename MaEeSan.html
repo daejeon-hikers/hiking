@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax MaEeSan1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>No snow but cold</h2>
+            <div class="img_container left">
+                <img src="images/mountains/MaEeSan/map.jpg">
+            </div>
+            <p>
+                This hike of 29 December of 2018 was the last hike of the year 2018. It was especially cold (-10), and originally we were
+                going to 덕유산 DeokguSan but decided to do this hike instead because of the cold and that there was little snow on that
+                mountain. This is unusual at this time of year but fortunately due to modern technology the ski areas can run with
+                artificial snow.
+                We arrived around 10:45 a.m. and hiked around the small lake until we came to the trail that leads up a steep trail around
+                the piles of rocks that were placed there by monks. This area has an interesting temple and is worth investigating but do
+                not move any of the rocks.
+
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Pagoda</h2>
+            <div class="img_container right">
+                <img src="images/mountains/MaEeSan/cliff.jpg">
+            </div>
+            <p>
+                Located here you can find MaEesandoltap (마이산돌탑)…..”san” is Korean for mountain, dol” is Korean for stone, and “tap” is
+                Korean for Pagoda. Therefore this is the MaEe Mountain stone Pagoda. A Pagoda is symbolic of Buddha and a site of worship so
+                you should be respectful at all times. Although in India Pagoda’s were often made from earth and in China from wood when
+                Pagodas first appeared in Korea in the 7th century, people took advantage of Korea’s plentiful supply of high quality
+                granite stone which is why most of Korea’s pagodas are made of stone. The area is part of the greater MaEeSan provincial
+                park (마이산도립공원).
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Steep bare rock surface</h2>
+            <div class="img_container left">
+                <img src="images/mountains/MaEeSan/path.jpg">
+            </div>
+            <p>
+                Then at the top of this area between the ears we turned left up one of the smaller mountains adjacent to the larger of the
+                ears. At this time of year, winter the tall ears are closed to hiking because of ice and falling rocks. In fact there is a
+                substantial fine ($1000) if you are caught hiking on these mountains when closed.
+                Then we scrambled up a steep bare rock surface that looked and felt like cement. This surface was not easy to climb as it
+                was very smooth. Then the trail varied between a bare rock surface and a dirt path that was covered with leaves. We soon
+                arrived at an open area to the left that had great views of the adjacent mountains as show in the photos.
+
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Gazebo</h2>
+            <div class="img_container right">
+                <img src="images/mountains/MaEeSan/gazebo.jpg">
+            </div>
+            <p>
+                We stopped for lunch here and viewed the distant gazebo that would be our next destination. We then hiked on a trail that
+                was steep at times but not difficult and reached the gazebo which had the best views in all directions. We enjoyed the views
+                but did not stay long as it was so cold and ascended down a steep ladder. It was a most interesting ladder as it became
+                steeper when going down it until at the end it was almost vertical!
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small MaEeSan2">
+            <div class="parallax_h1_contianer">
+                <h1>Winter view</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Closures during the winter</h2>
+            <p>
+                This trail eventually looped around back to the lake and the parking lot. This was not a hard hike and in the winter one can
+                enjoy the temples and views without all the crowds that ascend on the location in the other seasons of the year. The
+                negative aspect was that you cannot hike up the ears because their trails are not open in the winter.
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
