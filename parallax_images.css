@@ -185,9 +185,28 @@
 .parallax.MaEeSan1 {
     background-image: url("images/mountains/MaEeSan/parallax.jpg");
 }
+
 .parallax.MaEeSan2 {
     background-image: url("images/mountains/MaEeSan/parallax2.jpg");
 }
+
+.parallax.UnJuSanSeong1 {
+    background-image: url("images/mountains/UnJuSanSeong/parallax.jpg");
+}
+
+.parallax.UnJuSanSeong2 {
+    background-image: url("images/mountains/UnJuSanSeong/path.jpg");
+}
+
+.parallax.UnJuSanSeong3 {
+    background-image: url("images/mountains/UnJuSanSeong/pots2.jpg");
+}
+
+
+
+
+
+
 
 
 /* canoe */

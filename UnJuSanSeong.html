@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <div class="nav_logo">Daejeon Hikers</div>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="DeoGyuSan.html">DeoGyuSan
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a>
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="NakDong.html">NakDong
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Kum river
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax UnJuSanSeong1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Ancient Fortress</h2>
+            <div class="img_container left">
+                <img src="images/mountains/UnJuSanSeong/fortress.jpg">
+            </div>
+            <p>
+                This mountain containing the historical remnants of an ancient fortress (Seong or 성 translates to Fortress) dating back to
+                Baekje (백제) Period (18 BC to 660AD), is located within the SeJong (세종시) City limits. At the time of our hike in April 2018,
+                work was underway at the base of the mountain to develop this area into a national park and improve the area around this
+                mountain to make the area more user friendly as the population of the new nearby city of Sejong (세종시) continues to grow. It
+                is also a unique chance to learn more about the history of this region of Korea. This was most likely an important fortress
+                during the period when Shilla (신라) together with Tang dynasty of China was unifying all of Korea in the 7th century and in
+                any case was certainly an important military base during the Baekje (백제) period. From the Fortress walls there are extensive
+                views in all directions.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Fortress walls</h2>
+            <div class="img_container right">
+                <img src="images/mountains/UnJuSanSeong/fortress2.jpg">
+            </div>
+            <p>
+                During Baekje (백제) times the huge mountain fortress stretched over several villages in the area. The outside fortress walls
+                were 3098 meters in length and the inside fortress walls extended for 543 meters. The walls were made with stones which was
+                the building material of choice at that time due to their plentiful supply and strength. That much of the walls can be
+                walked along today is a testament to their construction techniques and strong will of the people of that period. One cannot
+                help but be impressed by the size of the stone structure. Inside the fortress area are some tombs that also date back to
+                Baekje (백제) times. During excavation much earthenware, ceramics and roof tiles dating from the Baejke period were recovered.
+                Also located on this mountain is the temple 고산사 which contains the temple bells referred to as 백제삼천범종. The temple is a place
+                to pray in order to comfort the spirits of former Baekje (백제) kings.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small UnJuSanSeong2">
+            <div class="parallax_h1_contianer">
+                <h1>Gentle trails</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Hundreds of Pots</h2>
+            <div class="img_container left">
+                <img src="images/mountains/UnJuSanSeong/pots.jpg">
+            </div>
+            <p>
+                The trail that we took starts at a complex that includes an exclusive restaurant and a place that has many large ceramic
+                jars in which are stored Korean Traditional condiments such as KimChi (김치). The trail led up a very steep valley through the
+                woods which were still vacant of new leaves, though the path had still the remains of last year’s leaves covering them. The
+                location where we started was about 2 km from the peak. As usual in Korea, the trail was well defined and there were many
+                signs that could guide you at any of the trail intersections. To encourage families to hike in the woods there were many
+                strategically placed benches along the trail for resting. Along the way there were also signs telling about the history of
+                the area. Our trail skirted around the peak and finally led up to steps that were made with wood but eventually become stone
+                steps as we approached the summit.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Tower Monument</h2>
+            <div class="img_container right">
+                <img src="images/mountains/UnJuSanSeong/tower.jpg">
+            </div>
+            <p>
+                On the summit there is a large modern monument of granite shaped like a tower in a park like setting. Engraved on the
+                monument are the words “백제의 얼 상징탑” which roughly translates to “a tower that symbolizes the spirt of Baekje”, meaning the
+                enduring spirit of the people who were responsible for the construction of the fortress walls. Although the monument was
+                built to convey the spirit of loyalty and wisdom of the Baekje (백제) people to their descendants, its existence typifies the
+                honor which is still bestowed by the current Korean society on their ancestors. After looking over the summit area, which
+                incidentally is an ideal place for a lunch break, we followed the well-marked path that leads down to the ancient reservoir
+                that has the appearance of a large swimming pool. As we continued on, the great walls of the fortress came into view. These
+                were some of the most impressive fortress walls that I have seen in central Korea.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small UnJuSanSeong3">
+            <div class="parallax_h1_contianer">
+                <h1>Kimchi pots</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Cherry blossoms</h2>
+            <div class="img_container left">
+                <img src="images/mountains/UnJuSanSeong/cherry.jpg">
+            </div>
+            <p>
+                From here there was a road to follow but we needed to be careful as this was an active road with many cars travelling in
+                both directions. Along the sides of the road were several beautiful flowering cherry trees proudly displaying their blossoms
+                for us to enjoy. At the bottom of this road there were signs that indicated the direction downward until eventually we
+                reached the Buddhist temple again then the parking area where the hike began. This hike is near to Daejeon, approx. 1 hour
+                and 10 minutes driving from our starting point of KAIST and is one of the most historic of the mountains in the vicinity of
+                the new city of SeJong which is approx. 20 minutes away by car. It is a good hike to plan for the spring as the trees are
+                quite beautiful when they are abundantly adored with blossoms. Despite a few steep patches it is not a hard hike, suitable
+                for families and the not so fit.
+            </p>
+        </div>
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountians</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
