@@ -4,7 +4,7 @@
 <head>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-    <title>Daejeon Hikers - Mountains</title>
+    <title>Daejeon Hikers - Home</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="parallax_images.css" rel="stylesheet" type="text/css">
     <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
@@ -22,7 +22,7 @@
         <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
         <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
         <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
-        <a href="index.html" class="nav_logo">Daejeon Hikers</a>
+        <div class="nav_logo">Daejeon Hikers</div>
     </div>
     <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
     <div id="mySidenav" class="nav_bar">
@@ -52,80 +52,31 @@
             </a>
         </div>
     </div>
+
     <!-- Add all page content inside this div -->
     <div id="main" class="main">
+
         <!-- full screen parallax image  -->
-        <div class="parallax mountains1 full" id="parallax">
+        <div class="parallax home1 full" id="parallax">
             <!-- down arrow for the scroll down -->
-            <div id="section02" class="demo">
+            <section id="section02" class="demo">
                 <button onclick="scrollDown()"><span></span>Scroll</button>
-            </div>
+            </section>
         </div>
-        <div class="card_container">
-            <div class="row">
-                <a href="introductionM.html" class="content small">
-                    <h4>Introduction to Mountains</h4>
-                    <div class="img_container">
-                        <img alt="scenic image of DeoGyuSan" src="images/mountains/DeoGyuSan/parallax.jpg">
-                    </div>
-                </a>
-                <a href="OuSeongEeSan.html" class="content small">
-                    <h4>OuSeongEeSan</h4>
-                    <div class="img_container">
-                        <img alt="scenic image of OuSeongEeSan" src="images/mountains/OuSeongEeSan/parallax.JPG">
-                    </div>
-                </a>
-                <a href="ManInSan.html" class="content small">
-                    <h4>ManInSan</h4>
-                    <div class="img_container">
-                        <img alt="image from ManInSan" src="images/mountains/ManInSan/parallax.jpg">
-                    </div>
-                </a>
-            </div>
-            <div class="row">
-                <a href="GyerYongSan.html" class="content small">
-                    <h4>GyerYongSan</h4>
-                    <div class="img_container">
-                        <img alt="scenic image of DeoGyuSan" src="images/mountains/GyerYongSan/parallax.jpg">
-                    </div>
-                </a>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            <a href="DeoGyuSan.html" class="content small">
-                <h4>DeoGyuSan</h4>
-                <div class="img_container">
-                    <img alt="scenic image of DeoGyuSan" src="images/mountains/DeoGyuSan/parallax.jpg">
-                </div>
-            </a>
-        </div>
-
-
-
-
 
         <footer>
 
             <div class="footer-right">
-                <a class="icon-10 facebook" href="#" title="Facebook">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
                     <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
                             <path
                                 d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
                             </path>
-                        </svg></div>
+                        </svg>
+                    </div>
                 </a>
+                <!-- darkmode switch -->
                 <div class="switch_container">
                     <button class="switch" id="darkBtn" onclick="applyDarkmode()">
                         <i class="rail">
@@ -134,17 +85,15 @@
                     </button>
                     <div class="title">Dark Mode</div>
                 </div>
-
             </div>
-
+            <!-- links in the footer -->
             <div class="footer-left">
-
                 <p class="footer-links">
                     <a href="index.html">Home</a>
                     ·
                     <a href="mountains.html">Mountians</a>
                     ·
-                    <a href="canoe.html">Canoeing</a>
+                    <a href="canoeing.html">Canoeing</a>
                     ·
                     <a href="about_us.html">About Us</a>
                 </p>

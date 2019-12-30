@@ -15,6 +15,10 @@
     background-image: url("images/parallax_house_in_mountain.jpg");
 }
 
+.parallax.introM1 {
+    background-image: url("images/parallaxIM.jpg");
+}
+
 
 
 /* mountains */
