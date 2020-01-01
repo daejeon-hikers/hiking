@@ -15,11 +15,13 @@
     background-image: url("images/parallax_house_in_mountain.jpg");
 }
 
+
+
+
+
 .parallax.introM1 {
     background-image: url("images/parallaxIM.jpg");
 }
-
-
 
 /* mountains */
 .parallax.mountains1 {
@@ -212,7 +214,23 @@
 
 
 
+.parallax.introC1 {
+    background-image: url("images/canoeing/intro/parallax.jpg");
+}
 
+.parallax.introC2 {
+    background-image: url("images/canoeing/intro/parallax2.jpg");
+}
+
+.parallax.introC3 {
+    background-image: url("images/canoeing/intro/river.jpg");
+}
+.parallax.introC4 {
+    background-image: url("images/canoeing/intro/bridge.jpg");
+}
+.parallax.introC5 {
+    background-image: url("images/canoeing/intro/tent.jpg");
+}
 /* canoe */
 .parallax.canoe {
     background-image: url("images/canoe_parallax.JPG")
