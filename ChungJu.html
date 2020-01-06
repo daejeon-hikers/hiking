@@ -2,54 +2,78 @@
 <html lang="en">
 
 <head>
-     <meta content="width=device-width, initial-scale=1" name="viewport">
-     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-     <title>Daejeon Hikers - Home</title>
-     <link href="style.css" rel="stylesheet" type="text/css">
-     <link href="parallax_images.css" rel="stylesheet" type="text/css">
-     <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
-     <script src="javascript/darkMode.js"></script>
-     <script src="javascript/scrollposition.js"></script>
-     <script src="javascript/sideNav.js"></script>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
 </head>
 <!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
 
 <body onresize="widthCheck()" onload="checkDarkmode()">
-     <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
-     <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
-     <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
-     <div class="moblie_nav" id="moblieNav">
-          <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
-          <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
-          <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
-          <div class="nav_logo">Daejeon Hikers</div>
-     </div>
-     <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
-     <div id="mySidenav" class="nav_bar">
-          <div class="nav_bar_links">
-               <a href="index.html">Home
-                    <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
-               </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
-                    <div class="arrow_container"><i></i><i></i></div>
-               </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
-                    <div class="arrow_container"><i></i><i></i></div>
-               </a><a href="about_us.html">About Us</a>
-          </div>
-          <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
-          <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')"
-               onmouseout="dropDownClose('Mountain')">
-               <a href="DeoGyuSan.html">DeoGyuSan
-               </a><a href="OuSeongEeSan.html">OuSeongEeSan
-               </a><a href="ManInSan.html">ManInSan
-               </a>
-          </div>
-          <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
-               <a href="NakDong.html">NakDong
-               </a><a href="YeongSang.html">YeongSang
-               </a><a href="Kum.html">Kum river
-               </a>
-          </div>
-     </div>
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <a href="index.html" class="nav_logo">Daejeon Hikers</a>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="introductionMountains.html">Introduction to Mountains
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a><a href="GyerYongSan.html">GyerYongSan
+            </a><br>
+            <a href="BoMunSan.html">BoMunSan
+            </a><a href="KaJeongSan.html">KaJeongSan
+            </a><a href="GapHaSan.html">GapHaSan
+            </a><a href="CheongNamDae.html">CheongNamDae
+            </a><br>
+            <a href="GuBongSan.html">GuBongSan
+            </a><a href="CheonTaeSan.html">CheonTaeSan
+            </a><a href="JilHyeonSan.html">JilHyeonSan
+            </a><a href="NaBalBong.html">NaBalBong
+            </a><br>
+            <a href="SongNiSan.html">SongNiSan
+            </a><a href="YoungSeongSan.html">YoungSeongSan
+            </a><a href="DaeDunSan.html">DaeDunSan
+            </a><a href="MaEeSan.html">MaEeSan
+            </a><br>
+            <a href="UnJuSanSeong.html">UnJuSanSeong
+            </a><a href="DeoGyuSan.html">DeoGyuSan
+            </a>
+
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="introductionC.html">Introduction to Canoeing
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Geum river
+            </a><a href="Seomjin.html">Seomjin
+            </a><br>
+            <a href="ChungJu.html">ChungJu
+            </a><a href="DaeCheong.html">DaeCheong
+            </a><a href="NakDong.html">NakDong
+            </a>
+        </div>
+    </div>
 
      <!-- Add all page content inside this div -->
      <div id="main" class="main">
