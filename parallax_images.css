@@ -141,6 +141,9 @@
 }
 
 .parallax.NaBalBong2 {
+    background-image: url("images/mountains/NaBalBong/parallaxStone.jpg")
+}
+.parallax.NaBalBong3 {
     background-image: url("images/mountains/NaBalBong/tree.jpg")
 }
 

@@ -117,6 +117,11 @@ h4 {
 .content.small:hover {
     transform: scale(1.04);
 }
+.content.small .img_container {
+        object-fit: cover;
+        height: 181px;
+        overflow: hidden;
+}
 
 /* styleing of the image in side the links on the mountians and canoe page */
 .content.small .img_container img {
@@ -628,11 +633,15 @@ body.dark,
         width: 100%;
         margin: 16px auto;
         display: block;
+        height: auto;
     }
 
     /* removes the scaling hover effect on moblie*/
     .content.small:hover {
         transform: none;
+    }
+    .content.small .img_container {
+        height: auto;
     }
 
     /* removing display flex used on the destkop site */
@@ -653,7 +662,6 @@ body.dark,
         display: block;
         padding: 0 0 10px 0;
         float: none;
-
     }
 
     .content .img_container img {
