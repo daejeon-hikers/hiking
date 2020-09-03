@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title>Daejeon Hikers - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="parallax_images.css" rel="stylesheet" type="text/css">
+    <link href="images/favicon.png" rel="icon" sizes="32x32" type="image/png">
+    <script src="javascript/darkMode.js"></script>
+    <script src="javascript/scrollposition.js"></script>
+    <script src="javascript/sideNav.js"></script>
+</head>
+<!-- runs funcinot width check so that on resize the page does not break due to the navbar style being applied by css -->
+
+<body onresize="widthCheck()" onload="checkDarkmode()">
+    <!-- page cover is used when the moblie nav bar is opened to darken the main section of the page -->
+    <div class="page_cover" id="pageCover" onclick="closeNav()"></div>
+    <!-- top nav bar that shown on the moblie page and also contians the nav banner -->
+    <div class="moblie_nav" id="moblieNav">
+        <!-- nav open and close button when moblie nav bar is hidden close button is behind the open nav button -->
+        <div class="nav_btn open_btn" id="openBtn" onclick="openNav()"><i></i><i></i><i></i></div>
+        <div class="nav_btn close_btn" id="closeBtn" onclick="closeNav()"></div>
+        <a href="index.html" class="nav_logo">Daejeon Hikers</a>
+    </div>
+    <!-- the nav bar on the page. is hidden off to the side on the moblie page -->
+    <div id="mySidenav" class="nav_bar">
+        <div class="nav_bar_links">
+            <a href="index.html">Home
+                <!-- dropdown menu funtions on mouseover and mouseout and the 2 <i> are the down arrow -->
+            </a><a href="mountains.html" onmouseout="dropDownClose('Mountain')" onmouseover="dropDownOpen('Mountain')">Mountains
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="canoe.html" onmouseout="dropDownClose('Canoe')" onmouseover="dropDownOpen('Canoe')">Canoeing
+                <div class="arrow_container"><i></i><i></i></div>
+            </a><a href="about_us.html">About Us</a>
+        </div>
+        <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
+        <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
+            <a href="introductionMountains.html">Introduction to Mountains
+            </a><a href="OuSeongEeSan.html">OuSeongEeSan
+            </a><a href="ManInSan.html">ManInSan
+            </a><a href="GyerYongSan.html">GyerYongSan
+            </a><br>
+            <a href="BoMunSan.html">BoMunSan
+            </a><a href="KaJeongSan.html">KaJeongSan
+            </a><a href="GapHaSan.html">GapHaSan
+            </a><a href="CheongNamDae.html">CheongNamDae
+            </a><br>
+            <a href="GuBongSan.html">GuBongSan
+            </a><a href="CheonTaeSan.html">CheonTaeSan
+            </a><a href="JilHyeonSan.html">JilHyeonSan
+            </a><a href="NaBalBong.html">NaBalBong
+            </a><br>
+            <a href="SongNiSan.html">SongNiSan
+            </a><a href="YoungSeongSan.html">YoungSeongSan
+            </a><a href="DaeDunSan.html">DaeDunSan
+            </a><a href="MaEeSan.html">MaEeSan
+            </a><br>
+            <a href="UnJuSanSeong.html">UnJuSanSeong
+            </a><a href="DeoGyuSan.html">DeoGyuSan
+            </a>
+
+        </div>
+        <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
+            <a href="introductionC.html">Introduction to Canoeing
+            </a><a href="YeongSang.html">YeongSang
+            </a><a href="Kum.html">Geum river
+            </a><a href="Seomjin.html">Seomjin
+            </a><br>
+            <a href="ChungJu.html">ChungJu
+            </a><a href="DaeCheong.html">DaeCheong
+            </a><a href="NakDong.html">NakDong
+            </a>
+        </div>
+    </div>
+
+    <!-- Add all page content inside this div -->
+    <div id="main" class="main">
+
+        <!-- full screen parallax image  -->
+        <div class="parallax MunJangDae1 full" id="parallax">
+            <!-- down arrow for the scroll down -->
+            <section id="section02" class="demo">
+                <button onclick="scrollDown()"><span></span>Scroll</button>
+            </section>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Short Eastern hike description </h2>
+            <div class="img_container left">
+                <img src="images/mountains/MunJangDae/picture1.jpg">
+            </div>
+            <p>
+                First a reminder that you will be hiking in one of Korea’s National Parks and they have strict rules particularly regarding
+                pets such as dogs which are not allowed in the parks as they can disturb the park wildlife. I will describe a hike up this
+                beautiful mountain located in the Songnisan (속리산국립공원) National park, established in 1970, from the east side. This is not
+                the easiest way to hike this mountain as the trail is very steep for most of its distance since it is only a little over
+                three Km long to this beautiful peak of an impressive 1054 meters. On your hike please note the pink coarse grained rocks
+                that form the foundation of this famous mountain. It is granite and is an igneous rock that is formed deep in the earth’s
+                crust. This coarse grained rock is one of the reasons for this mountain’s existence as it is relatively resistant to
+                erosion.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Eastern entrance</h2>
+            <div class="img_container right">
+                <img src="images/mountains/MunJangDae/picture2.jpg">
+            </div>
+            <p>
+                At the beginning of the trail is the well-known SeongBul temple (성불사) which is well worth a visit as you are passing by
+                anyway and the main destination for many people visiting the Songnisan (속리산국립공원) National Park who enter from this side of
+                the national park. Due to its massive size of 275 square kilometers, there are several entrances to Songnisan National Park
+                (속리산국립공원). We parked for this hike in the 화북주차장 parking lot located in a Northeast direction from the peak of MunJangDae
+                (문장대). Also on the way to the summit using this eastern path is the waterfall known as 오송폭포. We had to use our own two feet
+                to climb the mountain but back in 1464, King Sejo (세조) was carried up in a palanquin chair by his servants, without the
+                benefit of strategically placed ropes……or so the story goes. On the summit, (which he is said to have named) he had his
+                scholars read and compose poetry, supposedly inspired by the postcard perfect scenery.
+            </p>
+        </div>
+        <!-- small parallax -->
+        <div class="parallax small MunJangDae2">
+            <div class="parallax_h1_contianer">
+                <h1>Peaks of Songnisan National park (속리산국립공원)</h1>
+            </div>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Icy paths in the winter</h2>
+            <div class="img_container left">
+                <img src="images/mountains/MunJangDae/picture3.jpg">
+            </div>
+            <p>
+                The trail starts at the parking lot shown on the map in the following paragraph. As it is a National Park, a small admission
+                is charged as you pass by the ranger station. Initially, the trail is not steep and is made up of carefully placed stones
+                which follow a stream which appears to follow the path. There are several intermittent bridges that cross the stream which
+                would be very difficult to cross during the monsoon season in Korea otherwise. As in photo shown, the stream may be covered
+                with ice in winter giving the appearance of a mini glacier making its way through the sleepy forest. Even when little snow
+                has fallen this location is difficult without crampons (isen in Korea) because of the presence of ice during winter so
+                exercise caution in this area.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>문장대 Peak</h2>
+            <div class="img_container right">
+                <img src="images/mountains/MunJangDae/picture4.jpg">
+            </div>
+            <p>
+                There are numerous trail signs indicating the distance to the peak along the trail so just continue up the trail that
+                becomes steeper as you ascent until you reach the top of the mountain. This is one of the more interesting peaks as it is
+                defined by a large boulder with a steel ladder that leads up to the top (see parallax picture above). On a clear day the
+                views from here are impressive in all directions and well worth the challenge of the hike as long as you don’t slip and fall
+                on the ice. When returning to the base of the mountain be very careful to take the same trail that you used to climb up as
+                there are numerous trails that ascend the mountain. Taking the wrong path lead you far from the parking lot where you began
+                the hike.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Map of the hike.</h2>
+            <div class="img_container left">
+                <img src="images/mountains/MunJangDae/picture5.jpg">
+            </div>
+            <p>
+                This is considered one of the must do hikes in Korea. SongNiSan National Park (속리산국립공원) receives approx. 1.5 million
+                visitors each year. This remote mountain with its unique rocky peak is particularly scenic, so much so that it must have
+                been difficult for the monks to concentrate on meditation in the scattered temples amongst the splendid scenery. There are a
+                number of other peaks in this range and each has its special view of the surrounding mountains. Public transportation is
+                quite limited in this remote sparsely populated mountain country of Central Korea, in fact the name SongNiSan (속리산) means
+                “remote from the ordinary world”. There is an intercity bus service (시외버스) from Daejeon 복합 bus terminal to the SongNiSan
+                (속리산) bus terminal via Boeun (보은) which is located at the Southwestern main entrance of the national park.
+            </p>
+        </div>
+        <!-- content cards. to add content add heading between the <h2> and </h2> class left or right for the side of the image and put the text contnet between<p> and </p> -->
+        <div class="content">
+            <h2>Local village</h2>
+            <div class="img_container right">
+                <img src="images/mountains/MunJangDae/picture6.jpg">
+            </div>
+            <p>
+                The village surrounding the bus terminal is a sizeable village with homestay style accommodation, restaurants, souvenir
+                shops, a campground in the summer and as well as one of Korea’s most renown temples the 법주사 BeopJuSa temple. (See above for
+                more information about BeopJuSa temple.) Unfortunately, there is little in the way of variety with both stores and
+                restaurants in the vicinity of the bus terminal with most restaurants selling the same food dishes being 불고기 정식, 산채 정식 and
+                산채 비빔밥 and stores selling the same souvenirs. Despite the popularity of the national park the village gives a dying
+                impression inhabited by mainly elderly people. A stroll through the side streets is recommended to find some out of the way
+                but unique places. For example one side street revealed a butcher shop that ran a small 삼겹살 (long fried strips of fatty pork
+                on a grill) restaurant behind the butcher shop.
+            </p>
+        </div>
+
+
+        <footer>
+
+            <div class="footer-right">
+                <!-- facebook social media icon -->
+                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                            <path
+                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                            </path>
+                        </svg>
+                    </div>
+                </a>
+                <!-- darkmode switch -->
+                <div class="switch_container">
+                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                        <i class="rail">
+                            <i class="knob"></i>
+                        </i>
+                    </button>
+                    <div class="title">Dark Mode</div>
+                </div>
+            </div>
+            <!-- links in the footer -->
+            <div class="footer-left">
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="mountains.html">Mountains</a>
+                    ·
+                    <a href="canoeing.html">Canoeing</a>
+                    ·
+                    <a href="about_us.html">About Us</a>
+                </p>
+
+                <p> Site designed by Pablo Paulsen &copy; 2019</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

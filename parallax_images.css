@@ -210,7 +210,12 @@
 .parallax.UnJuSanSeong3 {
     background-image: url("images/mountains/UnJuSanSeong/pots2.jpg");
 }
-
+.parallax.MunJangDae1 {
+    background-image: url("images/mountains/MunJangDae/parallax.jpg");
+}
+.parallax.MunJangDae2 {
+    background-image: url("images/mountains/MunJangDae/parallax2.jpg");
+}
 
 
 
