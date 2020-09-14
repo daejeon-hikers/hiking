@@ -38,41 +38,10 @@
         </div>
         <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
         <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
-            <a href="introductionMountains.html">Introduction to Mountains
-            </a><a href="OuSeongEeSan.html">OuSeongEeSan
-            </a><a href="ManInSan.html">ManInSan
-            </a><a href="GyerYongSan.html">GyerYongSan
-            </a><br>
-            <a href="BoMunSan.html">BoMunSan
-            </a><a href="KaJeongSan.html">KaJeongSan
-            </a><a href="GapHaSan.html">GapHaSan
-            </a><a href="CheongNamDae.html">CheongNamDae
-            </a><br>
-            <a href="GuBongSan.html">GuBongSan
-            </a><a href="CheonTaeSan.html">CheonTaeSan
-            </a><a href="JilHyeonSan.html">JilHyeonSan
-            </a><a href="NaBalBong.html">NaBalBong
-            </a><br>
-            <a href="SongNiSan.html">SongNiSan
-            </a><a href="YoungSeongSan.html">YoungSeongSan
-            </a><a href="DaeDunSan.html">DaeDunSan
-            </a><a href="MaEeSan.html">MaEeSan
-            </a><br>
-            <a href="UnJuSanSeong.html">UnJuSanSeong
-            </a><a href="DeoGyuSan.html">DeoGyuSan
-            </a>
-
+            <div w3-include-html="mountlinks.html"></div>
         </div>
         <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
-            <a href="introductionC.html">Introduction to Canoeing
-            </a><a href="YeongSang.html">YeongSang
-            </a><a href="Kum.html">Geum river
-            </a><a href="Seomjin.html">Seomjin
-            </a><br>
-            <a href="ChungJu.html">ChungJu
-            </a><a href="DaeCheong.html">DaeCheong
-            </a><a href="NakDong.html">NakDong
-            </a>
+            <div w3-include-html="canlinks.html"></div>
         </div>
     </div>
 
@@ -224,43 +193,43 @@
 
     </div>
 
-        <footer>
-            <div class="footer-right">
-                <!-- facebook social media icon -->
-                <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
-                    <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
-                            <path
-                                d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
-                            </path>
-                        </svg>
-                    </div>
-                </a>
-                <div class="switch_container">
-                    <button class="switch" id="darkBtn" onclick="applyDarkmode()">
-                        <i class="rail">
-                            <i class="knob"></i>
-                        </i>
-                    </button>
-                    <div class="title">Dark Mode</div>
+    <footer>
+        <div class="footer-right">
+            <!-- facebook social media icon -->
+            <a class="icon-10 facebook" href="https://www.facebook.com/groups/287069294707454/" title="Facebook">
+                <div class="ir"><svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet">
+                        <path
+                            d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z">
+                        </path>
+                    </svg>
                 </div>
-
+            </a>
+            <div class="switch_container">
+                <button class="switch" id="darkBtn" onclick="applyDarkmode()">
+                    <i class="rail">
+                        <i class="knob"></i>
+                    </i>
+                </button>
+                <div class="title">Dark Mode</div>
             </div>
 
-            <div class="footer-left">
+        </div>
 
-                <p class="footer-links">
-                    <a href="index.html">Home</a>
-                    ·
-                    <a href="mountains.html">Mountains</a>
-                    ·
-                    <a href="canoe.html">Canoeing</a>
-                    ·
-                    <a href="about_us.html">About Us</a>
-                </p>
+        <div class="footer-left">
 
-                <p> Site designed by Pablo Paulsen &copy; 2019</p>
-            </div>
-        </footer>
+            <p class="footer-links">
+                <a href="index.html">Home</a>
+                ·
+                <a href="mountains.html">Mountains</a>
+                ·
+                <a href="canoe.html">Canoeing</a>
+                ·
+                <a href="about_us.html">About Us</a>
+            </p>
+
+            <p> Site designed by Pablo Paulsen &copy; 2019</p>
+        </div>
+    </footer>
     </div>
 </body>
 
