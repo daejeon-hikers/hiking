@@ -37,18 +37,10 @@
         </div>
         <!-- the dropdown menu. also has the drop down function on mouse over so that when the user hovers over the dropdown menu it does not disaperar -->
         <div class="drop_down mountain" id="dropDownMountain" onmouseover="dropDownOpen('Mountain')" onmouseout="dropDownClose('Mountain')">
-            <?php include 'mountlinks.php';?>
+            <div w3-include-html="mountlinks.html"></div>
         </div>
         <div class="drop_down canoe" id="dropDownCanoe" onmouseover="dropDownOpen('Canoe')" onmouseout="dropDownClose('Canoe')">
-            <a href="introductionC.html">Introduction to Canoeing
-            </a><a href="YeongSang.html">YeongSang
-            </a><a href="Kum.html">Geum river
-            </a><a href="Seomjin.html">Seomjin
-            </a><br>
-            <a href="ChungJu.html">ChungJu
-            </a><a href="DaeCheong.html">DaeCheong
-            </a><a href="NakDong.html">NakDong
-            </a>
+            <div w3-include-html="canlinks.html"></div>
         </div>
 
     </div>
@@ -213,5 +205,8 @@
         </footer>
     </div>
 </body>
+<script>
+    includeHTML();
+</script>
 
 </html>
